@@ -1,0 +1,22 @@
+@import '_reset.scss';
+@import '_colors.scss';
+@import '_classes.scss';
+@import '_mixins.scss';
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+p {}

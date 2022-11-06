@@ -1,0 +1,328 @@
+@import 'colors';
+
+/* #region GENERAL */
+
+.text-left {
+  text-align: left !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* #endregion GENERAL */
+
+/* #region BUTTONS */
+.btn {
+
+}
+
+.btn-black {
+  background: $black !important;
+  color: $white !important;
+  border: 0.5px solid #000000;
+}
+.btn-red {
+  background: #c20000 !important;
+  color: $white !important;
+  border: 0.5px solid #000000;
+}
+.btn-blue {
+  background: #001b3d !important;
+  color: $white !important;
+  border: 0.5px solid #001b3d;
+}
+.btn-purple {
+  background: linear-gradient(0deg, #6100bd, #6100bd), linear-gradient(0deg, #6500b8, #6500b8) !important;
+  color: $white !important;
+  border: 0.5px solid #6100bd;
+}
+.btn-white {
+  background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(0deg, #f6feff, #f6feff) !important;
+  color: $white !important;
+  border: 0.5px solid #f6feff;
+}
+.btn-white {
+  background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(0deg, #f6feff, #f6feff) !important;
+  color: $white !important;
+  border: 0.5px solid #f6feff;
+}
+
+.btn-outline-black {
+  background: none;
+  color: #000000 !important;
+  border: 0.5px solid #000000;
+}
+.btn-outline-red {
+  background: none;
+  color: #c20000 !important;
+  border: 0.5px solid #c20000;
+}
+.btn-outline-blue {
+  background: none;
+  color: #001b3d !important;
+  border: 0.5px solid #001b3d;
+}
+.btn-outline-purple {
+  background: none;
+  color: #6100bd !important;
+  border: 0.5px solid #6100bd;
+}
+.btn-outline-white {
+  background: none;
+  color: #ffffff !important;
+  border: 0.5px solid #f6feff;
+}
+
+/* #endregion BUTTONS */
+
+/* #region THEMES & COLORS */
+
+.primary-light {
+  background: $primary4 !important;
+  color: $white !important;
+}
+.primary-light_on {
+  background: $white !important;
+  color: $primary4 !important;
+}
+.primary_container_light {
+  background: $primary9 !important;
+  color: $primary1 !important;
+}
+.primary_container_light_on {
+  background: $primary1 !important;
+  color: $primary9 !important;
+}
+
+.secondary-light {
+  background: $secondary4 !important;
+  color: $white !important;
+}
+.secondary-light_on {
+  background: $white !important;
+  color: $secondary4 !important;
+}
+.secondary_container_light {
+  background: $secondary9 !important;
+  color: $secondary1 !important;
+}
+.secondary_container_light_on {
+  background: $secondary1 !important;
+  color: $secondary9 !important;
+}
+
+.tertiary-light {
+  background: $tertiary4 !important;
+  color: $white !important;
+}
+.tertiary-light_on {
+  background: $white !important;
+  color: $tertiary4 !important;
+}
+.tertiary_container_light {
+  background: $tertiary9 !important;
+  color: $tertiary1 !important;
+}
+.tertiary_container_light_on {
+  background: $tertiary1 !important;
+  color: $tertiary9 !important;
+}
+
+.error-light {
+  background: $error4 !important;
+  color: $white !important;
+}
+.error-light_on {
+  background: $white !important;
+  color: $error4 !important;
+}
+.error_container_light {
+  background: $error9 !important;
+  color: $error1 !important;
+}
+.error_container_light_on {
+  background: $error1 !important;
+  color: $error9 !important;
+}
+
+.bg-light {
+  background: $neutral9 !important;
+  color: $neutral1 !important;
+}
+.bg-light_on {
+  background: $neutral1 !important;
+  color: $neutral9 !important;
+}
+.surface_light {
+  background: $neutral9 !important;
+  color: $neutral1 !important;
+}
+.surface_light_on {
+  background: $neutral1 !important;
+  color: $neutral9 !important;
+}
+
+.neutral-light {
+  background: $neutral-variant9 !important;
+  color: $neutral-variant3 !important;
+}
+.neutral-light_on {
+  background: $neutral-variant3 !important;
+  color: $neutral-variant9 !important;
+}
+.outline-light {
+  background: $neutral-variant5 !important;
+  color: $white !important;
+}
+
+// dark
+.primary-dark {
+  background: $primary8 !important;
+  color: $primary2 !important;
+}
+.primary-dark-on {
+  background: $primary2 !important;
+  color: $primary8 !important;
+}
+.primary-container-dark {
+  background: $primary9 !important;
+  color: $primary3 !important;
+}
+.primary-container-dark-on {
+  background: $primary3 !important;
+  color: $primary9 !important;
+}
+
+.secondary-dark {
+  background: $secondary8 !important;
+  color: $secondary2 !important;
+}
+.secondary-dark-on {
+  background: $secondary2 !important;
+  color: $secondary8 !important;
+}
+.secondary-container-dark {
+  background: $secondary9 !important;
+  color: $secondary3 !important;
+}
+.secondary-container-dark-on {
+  background: $secondary3 !important;
+  color: $secondary9 !important;
+}
+
+.tertiary-dark {
+  background: $tertiary8 !important;
+  color: $tertiary2 !important;
+}
+.tertiary-dark-on {
+  background: $tertiary2 !important;
+  color: $tertiary8 !important;
+}
+.tertiary-container-dark {
+  background: $tertiary9 !important;
+  color: $tertiary3 !important;
+}
+.tertiary-container-dark-on {
+  background: $tertiary3 !important;
+  color: $tertiary9 !important;
+}
+
+.error-dark {
+  background: $error8 !important;
+  color: $error2 !important;
+}
+.error-dark-on {
+  background: $error2 !important;
+  color: $error8 !important;
+}
+.error-container-dark {
+  background: $error9 !important;
+  color: $error3 !important;
+}
+.error-container-dark-on {
+  background: $error3 !important;
+  color: $error9 !important;
+}
+
+.bg-dark {
+  background: $neutral1 !important;
+  color: $neutral9 !important;
+}
+.bg-dark-on {
+  background: $neutral9 !important;
+  color: $neutral1 !important;
+}
+.surface-dark {
+  background: $neutral1 !important;
+  color: $neutral8 !important;
+}
+.surface-dark-on {
+  background: $neutral8 !important;
+  color: $neutral1 !important;
+}
+
+.neutral-dark {
+  background: $neutral-variant3 !important;
+  color: $neutral-variant8 !important;
+}
+.neutral-dark-on {
+  background: $neutral-variant8 !important;
+  color: $neutral-variant3 !important;
+}
+.outline-dark {
+  background: $neutral-variant6 !important;
+  color: $black !important;
+}
+
+// surface light
+.surface-light {
+  background: #f6feff !important;
+}
+.surface-light-1 {
+  background: linear-gradient(0deg, rgba(40, 94, 167, 0.05), rgba(40, 94, 167, 0.05)), linear-gradient(0deg, #f6feff, #f6feff) !important;
+}
+.surface-light-2 {
+  background: linear-gradient(0deg, rgba(40, 94, 167, 0.08), rgba(40, 94, 167, 0.08)), linear-gradient(0deg, #f6feff, #f6feff) !important;
+}
+.surface-light-3 {
+  background: linear-gradient(0deg, rgba(40, 94, 167, 0.11), rgba(40, 94, 167, 0.11)), linear-gradient(0deg, #f6feff, #f6feff) !important;
+}
+.surface-light-4 {
+  background: linear-gradient(0deg, rgba(40, 94, 167, 0.12), rgba(40, 94, 167, 0.12)), linear-gradient(0deg, #f6feff, #f6feff) !important;
+}
+.surface-light-5 {
+  background: linear-gradient(0deg, rgba(40, 94, 167, 0.14), rgba(40, 94, 167, 0.14)), linear-gradient(0deg, #f6feff, #f6feff) !important;
+}
+
+// surface dark
+.surface-dark {
+  background: #001f24 !important;
+}
+.surface-dark-1 {
+  background: linear-gradient(0deg, #001f24, #001f24), linear-gradient(0deg, rgba(169, 199, 255, 0.05), rgba(169, 199, 255, 0.05)) !important;
+}
+.surface-dark-2 {
+  background: linear-gradient(0deg, #001f24, #001f24), linear-gradient(0deg, rgba(169, 199, 255, 0.08), rgba(169, 199, 255, 0.08)) !important;
+}
+.surface-dark-3 {
+  background: linear-gradient(0deg, #001f24, #001f24), linear-gradient(0deg, rgba(169, 199, 255, 0.11), rgba(169, 199, 255, 0.11)) !important;
+}
+.surface-dark-4 {
+  background: linear-gradient(0deg, #001f24, #001f24), linear-gradient(0deg, rgba(169, 199, 255, 0.12), rgba(169, 199, 255, 0.12)) !important;
+}
+.surface-dark-5 {
+  background: linear-gradient(0deg, #001f24, #001f24), linear-gradient(0deg, rgba(169, 199, 255, 0.14), rgba(169, 199, 255, 0.14)) !important;
+}
+
+/* #endregion THEMES & COLORS */
