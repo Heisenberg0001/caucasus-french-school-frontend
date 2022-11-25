@@ -1,1 +1,74 @@
-<p>header works!</p>
+<div class="header disable-select">
+  <div class="logos">
+    <a href="#">
+      <img class="school-logo" src="assets/images/logo.svg" alt="school-logo" />
+    </a>
+    <img class="aefe-logo" src="assets/images/aefe-logo.png" alt="AEFE" />
+  </div>
+
+  <!--  MENU  -->
+  <div class="menu disable-select" (clickOutside)="isMenuOpen = false">
+    <div (click)="toggleMenu()">
+      <!-- using ngStyle > display: none/block (not ngIf) to preload both icons -->
+      <img class="menu-icon" [ngStyle]="{ display: isMenuOpen ? 'none' : 'block' }" src="assets/icons/menu.svg" alt="menu" />
+      <img class="menu-icon" [ngStyle]="{ display: isMenuOpen ? 'block' : 'none' }" src="assets/icons/close.svg" alt="close" />
+      <span class="menu-title">{{ 'MENU' }}</span>
+    </div>
+    <ng-container>
+      <nav class="custom-scrollbar" *ngIf="isMenuOpen">
+        <!-- proNote & languages appear inside menu on smaller screen size -->
+        <div class="removable-menu-items">
+          <div class="border-bottom">
+            <div class="pronote" (click)="toggleMenuProNote()" (clickOutside)="menuProNoteVisible = false">{{ 'PRONOTE' }}</div>
+            <div class="languages" (clickOutside)="isLanguagesOpen = false">
+              <img class="flag" [src]="selectedLanguage.flagURL" [alt]="selectedLanguage.altText" (click)="setNextLanguage()" />
+            </div>
+          </div>
+          <div class="pronote-content" *ngIf="menuProNoteVisible">
+            <a href="#">{{ 'STUDENTS' }}</a>
+            <a href="#">{{ 'PARENTS' }}</a>
+          </div>
+        </div>
+        <!-- MENU items list -->
+        <div class="nav-item" *ngFor="let parentItem of menuItems">
+          <div (click)="toggleMenuSubList(parentItem)" [ngClass]="{ 'border-bottom': parentItem.isOpen }">
+            <span [ngClass]="{ 'nav-link-active': parentItem.isOpen }">{{ parentItem.label }}</span>
+            <img src="assets/icons/plus.svg" alt="plus" />
+          </div>
+          <ng-container *ngIf="parentItem.isOpen">
+            <a *ngFor="let childItem of parentItem.children" [href]="childItem.link" (click)="toggleMenu()">{{ childItem.label }} </a>
+          </ng-container>
+        </div>
+      </nav>
+    </ng-container>
+  </div>
+
+  <!--  SEARCH  -->
+  <div
+    class="search"
+    [ngClass]="{ 'search-shrink': !isSearchExpanded, 'search-expand': isSearchExpanded }"
+    (click)="toggleSearch($event, true)"
+    (clickOutside)="toggleSearch($event, false)">
+    <img src="assets/icons/search.svg" alt="search" />
+    <input type="text" name="search" placeholder="{{ isSearchExpanded ? 'Search...' : 'SEARCH' }}" [(ngModel)]="searchText" autocomplete="off" />
+    <img class="search-close" (click)="toggleSearch($event, false)" src="assets/icons/close.svg" alt="close" />
+  </div>
+
+  <!--  PRONOTE  -->
+  <div class="pronote-container">
+    <div class="pronote" (click)="openProNoteDialog()">{{ 'PRONOTE' }}</div>
+  </div>
+
+  <!--  LANGUAGES  -->
+  <div class="languages" (clickOutside)="isLanguagesOpen = false">
+    <img class="flag" [src]="selectedLanguage.flagURL" [alt]="selectedLanguage.altText" (click)="toggleLangDropdown()" />
+    <div class="lang-dropdown" *ngIf="isLanguagesOpen">
+      <ul>
+        <li *ngFor="let lang of languages" (click)="changeLanguage(lang)">
+          <img [src]="lang.flagURL" [alt]="lang.altText" />
+          <span>{{ lang.label }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
