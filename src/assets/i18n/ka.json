@@ -1,0 +1,40 @@
+{
+  "common": {
+    "SEARCH": "ძებნა",
+    "STUDENTS": "სტუდენტები",
+    "PARENTS": "მშობლები"
+  },
+  "lang": {
+    "GEO": "ქართული",
+    "ENG": "ინგლისური",
+    "FR": "ფრანგული"
+  },
+  "menu": {
+    "OUR_SCHOOL": "ჩვენი სკოლა",
+    "ABOUT_US": "ჩვენ შესახებ",
+    "FACILITIES": "Facilities",
+    "ADMINISTRATION": "ადმინისტრაცია",
+    "JOIN_OUR_TEAM": "Join Our Team",
+    "PARTNERS_SPONSORS": "პარტნიორები/სპონსორები",
+    "CONTACT_US": "დაგვიკავშირდი",
+    "LEARNING": "სწავლა",
+    "PRESCHOOL": "Preschool",
+    "PRIMARY": "Primary",
+    "MIDDLE_SCHOOL": "Middle School",
+    "HIGH_SCHOOL": "High School",
+    "EXTRACURRICULAR_ACTIVITIES": "Extracurricular Activities",
+    "SCHOOL_AND_UNIVERSITY_GUIDANCE": "School & University Guidance",
+    "SCHOOL_LIFE": "SCHOOL LIFE",
+    "PRACTICAL_INFO": "Practical Information",
+    "SCHOOL_CALENDAR": "სკოლის კალენდარი",
+    "NEWS_AND_ARTICLES": "News and Articles",
+    "LIBRARY": "ბიბლიოთეკა",
+    "CAFETERIA": "კაფეტერია",
+    "COMMUNITY": "COMMUNITY",
+    "PARENTS_ASSOCIATION": "Parents Association",
+    "EFC_ALUMNI": "EFC Alumni",
+    "ADMISSION": "ADMISSION",
+    "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
+    "ENROLLMENT": "Enrollment"
+  }
+}

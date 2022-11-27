@@ -1,3 +1,5 @@
+@import 'src/styles';
+
 .header {
   width: 100%;
   min-width: 280px;
@@ -33,14 +35,16 @@
 /************ LANGUAGES ************/
 .languages {
   float: right;
-  width: fit-content;
+  width: 34px;
+  height: fit-content;
   position: relative;
   img.flag {
     cursor: pointer;
   }
   div {
+    width: fit-content;
+    min-width: 160px;
     background: white;
-    min-width: 120px;
     padding: 6px 8px;
     position: absolute;
     bottom: -56%;
@@ -51,12 +55,15 @@
     -webkit-box-shadow: 0 0 13px -2px rgba(214, 227, 255, 0.6);
     -moz-box-shadow: 0 0 13px -2px rgba(214, 227, 255, 0.6);
     ul {
-      width: inherit;
       li {
         display: flex;
         align-items: center;
         list-style: none;
         cursor: pointer;
+        span {
+          padding: 0 2px;
+          @include textStyle_Georgian($font-size: 14px, $font-weight: 500, $line-height: 20px, $letter-spacing: 0.1px, $text-transform: capitalize);
+        }
         img {
           margin-right: 6px;
         }
@@ -69,14 +76,10 @@
 .pronote-container {
   float: right;
   padding: 0 16.5px;
+  min-width: 125px;
 }
 .pronote {
-  color: #c20000;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  text-transform: uppercase;
+  @include textStyle_Georgian(#c20000, 18px, 400, $line-height: 24px, $text-transform: uppercase);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   transition: 0.5s;
@@ -99,17 +102,14 @@
   align-items: center;
   transition: 0.5s;
   cursor: pointer;
-
+  img {
+    padding-top: 3px;
+  }
   input {
     width: 100%;
     padding: 10px 0;
     &::placeholder {
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0.1px;
-      text-transform: uppercase;
+      @include textStyle_Georgian(#ffffff, 14px, 500, $line-height: 20px, $letter-spacing: 0.1px, $text-transform: uppercase);
     }
   }
 }
@@ -164,11 +164,7 @@
       margin-right: 10px;
     }
     span {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0.1px;
-      text-transform: uppercase;
+      @include textStyle_Georgian(#ffffff, 14px, 500, $line-height: 20px, $letter-spacing: 0.1px, $text-transform: uppercase);
     }
   }
   nav {
@@ -201,12 +197,7 @@
       white-space: nowrap;
       cursor: pointer;
       span {
-        color: #d4e3ff;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 36px;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
+        @include textStyle(#d4e3ff, 28px, 400, $line-height: 36px, $letter-spacing: 1.5px, $text-transform: uppercase);
         transition: 0.5s;
       }
       img {
@@ -216,12 +207,7 @@
 
     /* sub-list item */
     a {
-      color: #d4e3ff;
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 36px;
-      letter-spacing: 1.5px;
-      text-transform: capitalize;
+      @include textStyle(#d4e3ff, 24px, 400, $line-height: 36px, $letter-spacing: 1.5px, $text-transform: capitalize);
       margin: 26px 0 0 20px;
       transition: 0.5s;
       &:hover {
@@ -242,24 +228,22 @@
     justify-content: space-between;
     padding: 0 0 9px 0;
   }
-  .pronote {
-    border: none;
-    font-style: normal;
-    font-size: 24.2069px;
-    line-height: 32px;
+  .menu-pronote {
+    @include textStyle(#c20000, 24.2069px, 400, $line-height: 32px, $text-transform: uppercase);
+    cursor: pointer;
+    &:hover {
+      font-weight: 500;
+    }
   }
   .pronote-content {
     display: flex;
     justify-content: space-between;
     margin-top: 12px;
     a {
-      color: #d6e3ff;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
+      @include textStyle(#d6e3ff, 18px, 400, $line-height: 24px, $letter-spacing: 1.5px, $text-transform: uppercase);
+      &:first-of-type{
+        padding-right: 6px;
+      }
     }
   }
 }

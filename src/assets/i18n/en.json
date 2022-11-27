@@ -1,0 +1,40 @@
+{
+  "common": {
+    "SEARCH": "search",
+    "STUDENTS": "students",
+    "PARENTS": "parents"
+  },
+  "lang": {
+    "GEO": "Georgian",
+    "ENG": "English",
+    "FR": "French"
+  },
+  "menu": {
+    "OUR_SCHOOL": "Our School",
+    "ABOUT_US": "About Us",
+    "FACILITIES": "Facilities",
+    "ADMINISTRATION": "Administration",
+    "JOIN_OUR_TEAM": "Join Our Team",
+    "PARTNERS_SPONSORS": "Partners/Sponsors",
+    "CONTACT_US": "Contact Us",
+    "LEARNING": "LEARNING",
+    "PRESCHOOL": "Preschool",
+    "PRIMARY": "Primary",
+    "MIDDLE_SCHOOL": "Middle School",
+    "HIGH_SCHOOL": "High School",
+    "EXTRACURRICULAR_ACTIVITIES": "Extracurricular Activities",
+    "SCHOOL_AND_UNIVERSITY_GUIDANCE": "School & University Guidance",
+    "SCHOOL_LIFE": "SCHOOL LIFE",
+    "PRACTICAL_INFO": "Practical Information",
+    "SCHOOL_CALENDAR": "School Calendar",
+    "NEWS_AND_ARTICLES": "News and Articles",
+    "LIBRARY": "Library",
+    "CAFETERIA": "Cafeteria",
+    "COMMUNITY": "COMMUNITY",
+    "PARENTS_ASSOCIATION": "Parents Association",
+    "EFC_ALUMNI": "EFC Alumni",
+    "ADMISSION": "ADMISSION",
+    "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
+    "ENROLLMENT": "Enrollment"
+  }
+}

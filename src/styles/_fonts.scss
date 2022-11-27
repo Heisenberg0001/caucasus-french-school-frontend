@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Adieu';
+  src: local('Adieu'), url('../assets/fonts/Adieu-Regular.ttf') format('truetype');
+}
+
+.font-noto-sans-georgian {
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+.font-adieu {
+  font-family: 'Adieu', sans-serif;
+}
