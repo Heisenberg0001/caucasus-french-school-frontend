@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Language, MenuItem } from './header.models';
+import { LanguageView, MenuItem } from './header.models';
 
 @Injectable()
 export class HeaderService {
   private _menuItems = MENU_ITEMS;
   constructor() {}
 
-  get languages(): Language[] {
+  get languages(): LanguageView[] {
     return LANGUAGES;
   }
 
@@ -18,124 +18,124 @@ export class HeaderService {
   }
 }
 
-const LANGUAGES: Language[] = [
-  { label: 'English', flagURL: 'assets/images/UK-flag.svg', altText: 'UK-flag' },
-  { label: 'Georgian', flagURL: 'assets/images/GE-flag.svg', altText: 'GEO-flag' },
-  { label: 'French', flagURL: 'assets/images/FR-flag.svg', altText: 'FR-flag' },
+const LANGUAGES: LanguageView[] = [
+  { name: 'ENG', flagURL: 'assets/images/UK-flag.svg', key: 'en', locale: 'en-US' },
+  { name: 'GEO', flagURL: 'assets/images/GE-flag.svg', key: 'ka', locale: 'ka-ge' },
+  { name: 'FR', flagURL: 'assets/images/FR-flag.svg', key: 'fr', locale: 'fr-fr' },
 ];
 
 // TODO: add links
 const MENU_ITEMS: MenuItem[] = [
   {
-    label: 'OUR SCHOOL',
+    label: 'menu.OUR_SCHOOL',
     isOpen: false,
     children: [
       {
-        label: 'About Us',
+        label: 'menu.ABOUT_US',
         link: '',
       },
       {
-        label: 'Facilities',
+        label: 'menu.FACILITIES',
         link: '',
       },
       {
-        label: 'Administration',
+        label: 'menu.ADMINISTRATION',
         link: '',
       },
       {
-        label: 'Join Our Team',
+        label: 'menu.JOIN_OUR_TEAM',
         link: '',
       },
       {
-        label: 'Partners/Sponsors',
+        label: 'menu.PARTNERS_SPONSORS',
         link: '',
       },
       {
-        label: 'Contact Us',
+        label: 'menu.CONTACT_US',
         link: '',
       },
     ],
   },
   {
-    label: 'LEARNING',
+    label: 'menu.LEARNING',
     isOpen: false,
     children: [
       {
-        label: 'Preschool',
+        label: 'menu.PRESCHOOL',
         link: '',
       },
       {
-        label: 'Primary',
+        label: 'menu.PRIMARY',
         link: '',
       },
       {
-        label: 'Middle School',
+        label: 'menu.MIDDLE_SCHOOL',
         link: '',
       },
       {
-        label: 'High School',
+        label: 'menu.HIGH_SCHOOL',
         link: '',
       },
       {
-        label: 'Extracurricular Activities',
+        label: 'menu.EXTRACURRICULAR_ACTIVITIES',
         link: '',
       },
       {
-        label: 'School & University Guidance',
+        label: 'menu.SCHOOL_AND_UNIVERSITY_GUIDANCE',
         link: '',
       },
     ],
   },
   {
-    label: 'SCHOOL LIFE',
+    label: 'menu.SCHOOL_LIFE',
     isOpen: false,
     children: [
       {
-        label: 'Practical Information',
+        label: 'menu.PRACTICAL_INFO',
         link: '',
       },
       {
-        label: 'School Calendar',
+        label: 'menu.SCHOOL_CALENDAR',
         link: '',
       },
       {
-        label: 'News and Articles',
+        label: 'menu.NEWS_AND_ARTICLES',
         link: '',
       },
       {
-        label: 'Library',
+        label: 'menu.LIBRARY',
         link: '',
       },
       {
-        label: 'Cafeteria',
+        label: 'menu.CAFETERIA',
         link: '',
       },
     ],
   },
   {
-    label: 'COMMUNITY',
+    label: 'menu.COMMUNITY',
     isOpen: false,
     children: [
       {
-        label: 'Parents Association',
+        label: 'menu.PARENTS_ASSOCIATION',
         link: '',
       },
       {
-        label: 'EFC Alumni',
+        label: 'menu.EFC_ALUMNI',
         link: '',
       },
     ],
   },
   {
-    label: 'ADMISSION',
+    label: 'menu.ADMISSION',
     isOpen: false,
     children: [
       {
-        label: 'Why Choose The French School?',
+        label: 'menu.WHY_CHOOSE_THE_FRENCH_SCHOOL',
         link: '',
       },
       {
-        label: 'Enrollment',
+        label: 'menu.ENROLLMENT',
         link: '',
       },
     ],

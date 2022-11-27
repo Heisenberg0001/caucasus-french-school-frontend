@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Language, MenuItem } from './header.models';
+import { LanguageView, MenuItem } from './header.models';
 import { HeaderService } from './header.service';
+import { LanguageService } from '@core/services';
 
 @Component({
   selector: 'app-header',
@@ -9,24 +10,24 @@ import { HeaderService } from './header.service';
   providers: [HeaderService],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private headerService: HeaderService) {}
-
   searchText: string = '';
   isMenuOpen: boolean = false;
   isLanguagesOpen: boolean = false;
   isSearchExpanded: boolean = false;
   menuProNoteVisible: boolean = false;
-  selectedLanguage!: Language;
+  selectedLanguage!: LanguageView;
+
+  constructor(private headerService: HeaderService, private languageService: LanguageService) {}
 
   get menuItems(): MenuItem[] {
     return this.headerService.menuItems;
   }
-  get languages(): Language[] {
+  get languages(): LanguageView[] {
     return this.headerService.languages;
   }
 
   ngOnInit(): void {
-    this.selectedLanguage = this.languages[0];
+    this.selectedLanguage = this.languageService.getPreferredLanguage();
   }
 
   toggleMenu(): void {
@@ -45,15 +46,17 @@ export class HeaderComponent implements OnInit {
     this.isLanguagesOpen = !this.isLanguagesOpen;
   }
 
-  changeLanguage(lang: Language): void {
-    this.selectedLanguage = lang;
+  changeLanguage(language: LanguageView): void {
+    this.selectedLanguage = language;
+    this.languageService.use(language);
     this.isLanguagesOpen = false;
   }
 
   setNextLanguage(): void {
-    const selectedLanguageIndex = this.languages.findIndex((lang) => lang.label === this.selectedLanguage.label) ?? 0;
+    const selectedLanguageIndex = this.languages.findIndex((lang) => lang.name === this.selectedLanguage.name) ?? 0;
     const nextLanguageIndex = selectedLanguageIndex === this.languages.length - 1 ? 0 : selectedLanguageIndex + 1;
     this.selectedLanguage = this.languages[nextLanguageIndex];
+    this.languageService.use(this.selectedLanguage);
   }
 
   toggleSearch(event: MouseEvent, isExpanded: boolean): void {

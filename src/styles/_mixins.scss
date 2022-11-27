@@ -1,0 +1,60 @@
+/*
+  Text, font mixins
+  USE:
+  @include textStyle(color,font-size,font-weight,line-height,letter-spacing,font-style,text-transform,text-align);
+*/
+@mixin textStyle(
+  $color: black,
+  $font-size: 24px,
+  $font-weight: 400,
+  $line-height: normal,
+  $letter-spacing: 1px,
+  $font-style: normal,
+  $text-transform: none,
+  $text-align: left
+) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-style: $font-style;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}
+
+/*
+  USE:
+  @include textStyle_Adieu(color,font-size,font-weight,line-height,letter-spacing,font-style,text-transform,text-align);
+*/
+@mixin textStyle_Adieu(
+  $color: black,
+  $font-size: 24px,
+  $font-weight: 400,
+  $line-height: normal,
+  $letter-spacing: 1px,
+  $font-style: normal,
+  $text-transform: none,
+  $text-align: left
+) {
+  @include textStyle($color, $font-size, $font-weight, $line-height, $letter-spacing, $font-style, $text-transform, $text-align);
+  font-family: 'Adieu', sans-serif;
+}
+/*
+  USE:
+  @include textStyle_Georgian(color,font-size,font-weight,line-height,letter-spacing,font-style,text-transform,text-align);
+*/
+@mixin textStyle_Georgian(
+  $color: black,
+  $font-size: 24px,
+  $font-weight: 400,
+  $line-height: normal,
+  $letter-spacing: 1px,
+  $font-style: normal,
+  $text-transform: none,
+  $text-align: left
+) {
+  @include textStyle($color, $font-size, $font-weight, $line-height, $letter-spacing, $font-style, $text-transform, $text-align);
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+/* Text, font mixins */

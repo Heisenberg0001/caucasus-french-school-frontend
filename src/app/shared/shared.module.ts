@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContentWrapperComponent, FooterComponent, HeaderComponent } from './components';
-import { ClickOutsideDirective } from './utils';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import {ClickOutsideDirective} from "@shared/utils";
+import {ContentWrapperComponent, FooterComponent, HeaderComponent} from "@shared/components";
 
 @NgModule({
   declarations: [ContentWrapperComponent, HeaderComponent, FooterComponent, ClickOutsideDirective],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   exports: [ContentWrapperComponent, HeaderComponent, FooterComponent, ClickOutsideDirective, ClickOutsideDirective],
   providers: [],
 })
