@@ -41,3 +41,8 @@ textarea {
   -webkit-line-break: after-white-space;
   -webkit-user-select: auto;
 }
+
+/* reset all ul styles */
+ul {
+  list-style: none;
+}
