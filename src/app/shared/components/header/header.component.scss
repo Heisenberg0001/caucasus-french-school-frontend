@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
   }
+  z-index: 10;
 }
 
 /************ LOGOS ************/
@@ -118,8 +119,9 @@
   input {
     width: 100%;
     padding: 10px 0;
+    @include textStyle_Georgian(#ffffff, 14px, 500, $line-height: 20px, $letter-spacing: 0.1px, $text-transform: none);
     &::placeholder {
-      @include textStyle_Georgian(#ffffff, 14px, 500, $line-height: 20px, $letter-spacing: 0.1px, $text-transform: uppercase);
+      text-transform: uppercase;
     }
   }
 }
@@ -351,6 +353,7 @@
   .header {
     nav {
       width: 100vw;
+      padding: 30px;
       .nav-item {
         &:not(&:last-of-type) {
           margin-bottom: 36px;
@@ -399,7 +402,7 @@
       position: absolute;
       bottom: -60px;
       right: -80px;
-      z-index: 100;
+      z-index: 20;
       transform: translate(-50%, -50%);
     }
   }
