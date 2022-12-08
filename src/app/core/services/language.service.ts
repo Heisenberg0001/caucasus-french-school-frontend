@@ -15,6 +15,10 @@ export class LanguageService {
     this.languages = LANGUAGES;
   }
 
+  get currentLanguage(): Language {
+    return this._currentLanguage;
+  }
+
   getPreferredLanguage(): Language {
     let preferredLanguage;
     const preferredLangJSON = localStorage.getItem(LANGUAGE);

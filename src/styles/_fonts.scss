@@ -5,9 +5,30 @@
   src: local('Adieu'), url('../assets/fonts/Adieu-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'AR Archy';
+  src: local('AR Archy'), url('../assets/fonts/ar-archy-extralight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AR Archy';
+  src: local('AR Archy'), url('../assets/fonts/ar-archy-thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AR Archy';
+  src: local('AR Archy'), url('../assets/fonts/ar-archy-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AR Archy';
+  src: local('AR Archy'), url('../assets/fonts/ar-archy-semibold.ttf') format('truetype');
+}
+
 .font-noto-sans-georgian {
   font-family: 'Noto Sans Georgian', sans-serif;
 }
 .font-adieu {
   font-family: 'Adieu', sans-serif;
+}
+.font-archy-bold {
+  font-family: 'AR Archy', sans-serif;
+  font-weight: 600;
 }

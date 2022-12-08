@@ -1,0 +1,14 @@
+<div class="news-item disable-select">
+  <div class="news-img-wrapper">
+    <img [src]="imgSrc" (error)="showPlaceholderImg()" alt="news article" />
+  </div>
+  <div class="news-text-wrapper">
+    <span>{{ publicationDate }} </span>
+    <p class="dots"><ng-content select="[description]"></ng-content></p>
+  </div>
+  <div class="hovered">
+    <h6><ng-content select="[title]"></ng-content></h6>
+    <p class="dots"><ng-content select="[summary]"></ng-content></p>
+    <span (click)="openNewsArticle()">{{ 'common.READ_MORE' | translate }}</span>
+  </div>
+</div>

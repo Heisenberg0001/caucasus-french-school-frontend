@@ -1,0 +1,121 @@
+@import 'src/styles';
+
+:host {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+}
+
+.event-card {
+  height: 159.07px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: context-menu;
+}
+
+.event-date {
+  width: 138.55px;
+  min-width: 90px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  span {
+    @include textStyle_Georgian(#001b3e, 57px, 500, $line-height: 64px, $letter-spacing: -0.25px, $text-transform: uppercase, $text-align: center);
+    word-break: break-word;
+  }
+}
+
+.event-content {
+  width: 100%;
+  height: 100%;
+  padding-left: 28.22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p {
+    @include textStyle_Georgian($black, 36px, 400, $line-height: 44px, $text-transform: none);
+    width: 100%;
+    height: 88px; // 2*44
+  }
+  span {
+    @include textStyle_Georgian(#841ae3, 45px, 400, $line-height: 52px, $text-transform: none);
+  }
+}
+
+/************************** RESPONSIVE **************************/
+@media only screen and (max-width: 1921px) {
+  .event-card {
+    height: 117.53px;
+  }
+  .event-date {
+    width: 101.66px;
+    height: 116.72px;
+    span {
+      @include textStyle_Georgian(#001b3e, 45px, 500, $line-height: 52px, $letter-spacing: -0.25px, $text-transform: uppercase, $text-align: center);
+    }
+  }
+  .event-content {
+    padding-left: 20.71px;
+    p {
+      @include textStyle_Georgian($black, 28px, 400, $line-height: 36px, $text-transform: none);
+      height: 80px; // 2*36+6+2
+    }
+    span {
+      @include textStyle_Georgian(#841ae3, 36px, 400, $line-height: 44px, $text-transform: none);
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .event-card {
+    height: 117px;
+  }
+  .event-date {
+    width: 101.66px;
+    height: 116.72px;
+    span {
+      @include textStyle_Georgian(#001b3e, 42.3592px, 500, $line-height: 49px, $letter-spacing: -0.25px, $text-transform: uppercase, $text-align: center);
+    }
+  }
+  .event-content {
+    padding-left: 20.71px;
+    p {
+      @include textStyle_Georgian($black, 22px, 400, $line-height: 28px, $text-transform: none);
+      height: 84px;
+    }
+    span {
+      @include textStyle_Georgian(#841ae3, 18px, 400, $line-height: 24px, $text-transform: none);
+    }
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .event-card {
+    height: 117px;
+  }
+  .event-date {
+    width: 101.66px;
+    height: 116.72px;
+    span {
+      @include textStyle_Georgian(#001b3e, 42.3592px, 500, $line-height: 49px, $letter-spacing: -0.25px, $text-transform: uppercase, $text-align: center);
+    }
+  }
+  .event-content {
+    padding-left: 20.71px;
+    p {
+      @include textStyle_Georgian($black, 22px, 400, $line-height: 28px, $text-transform: none);
+    }
+    span {
+      @include textStyle_Georgian(#841ae3, 18px, 400, $line-height: 24px, $text-transform: none);
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .event-card {
+    height: fit-content;
+  }
+}

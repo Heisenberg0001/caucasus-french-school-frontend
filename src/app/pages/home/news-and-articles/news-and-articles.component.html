@@ -1,1 +1,34 @@
-<p>news-and-articles works!</p>
+<div class="news-and-articles-container">
+  <h3 [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'NEWS_AND' | translate }}</h3>
+  <div *ngIf="news?.length || upcomingEvents?.length; else emptyList">
+    <div class="news-wrapper">
+      <ng-container *ngIf="news?.length">
+        <app-news-item
+          *ngFor="let article of news; let last = last"
+          class="border"
+          [ngClass]="{ 'border-bottom': last }"
+          [imgSrc]="article.imgSrc"
+          [url]="article.url"
+          [publicationDate]="article.publicationDate">
+          <span description> {{ article.description }}</span>
+          <span title>{{ article.title }}</span>
+          <span summary>{{ article.summary }}</span>
+        </app-news-item>
+      </ng-container>
+    </div>
+    <h3 class="articles-after" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'ARTICLES' | translate }}</h3>
+    <div class="events-wrapper">
+      <h4 [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'UPCOMING_EVENTS' | translate }}</h4>
+      <ng-container *ngIf="upcomingEvents?.length; else emptyList">
+        <app-upcoming-event *ngFor="let event of upcomingEvents" [date]="event.date" [timeInterval]="event.timeInterval">
+          {{ event.description }}
+        </app-upcoming-event>
+      </ng-container>
+    </div>
+  </div>
+  <h3 class="articles" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'ARTICLES' | translate }}</h3>
+</div>
+
+<ng-template #emptyList>
+  <div>{{ 'LIST_IS_EMPTY' | translate }}</div>
+</ng-template>

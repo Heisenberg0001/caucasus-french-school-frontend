@@ -1,0 +1,162 @@
+@import 'src/styles';
+
+.news-and-articles-container {
+  width: 100%;
+  height: fit-content;
+  padding: 120px 128px;
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 3px 0;
+  }
+}
+
+h3 {
+  @include textStyle($black, 136px, 400, $line-height: 105px, $letter-spacing: 0.5px, $text-transform: capitalize);
+}
+h3.articles {
+  justify-self: flex-end;
+  padding-right: 66px;
+  @include textStyle($black, 136px, 400, $line-height: 105px, $letter-spacing: 0.5px, $text-align: right);
+}
+
+.news-wrapper {
+  width: 57%;
+  padding-top: 10px;
+}
+.articles-after{
+  display: none;
+}
+
+.events-wrapper {
+  width: 42%;
+  padding: 0 0 95px 59.69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  h4 {
+    @include textStyle(#841ae3, 57px, 400, $line-height: 64px, $letter-spacing: 1.5px, $text-align: center);
+  }
+}
+
+.border {
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: $black;
+}
+.border-bottom {
+  border: 1px solid $black;
+}
+
+/************************** RESPONSIVE **************************/
+@media only screen and (max-width: 1921px) {
+  .news-and-articles-container {
+    padding: 76px 106px;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 8px 0;
+    }
+  }
+
+  h3 {
+    @include textStyle($black, 100px, 400, $line-height: 76px, $letter-spacing: 0.5px, $text-transform: capitalize);
+  }
+  h3.articles {
+    padding-right: 33px;
+    @include textStyle($black, 100px, 400, $line-height: 76px, $letter-spacing: 0.5px, $text-align: right);
+  }
+  .events-wrapper {
+    padding: 0 0 62px 38px;
+    gap: 30px;
+    h4 {
+      @include textStyle(#841ae3, 41px, 400, $line-height: 40px, $letter-spacing: -0.21px, $text-align: center);
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .news-and-articles-container {
+    padding: 70px 24px;
+    & > div {
+      padding: 50px 3px 0;
+    }
+  }
+  h3 {
+    @include textStyle($black, 80px, 400, $line-height: 70px, $letter-spacing: 0.5px, $text-transform: capitalize);
+  }
+  h3.articles {
+    padding-right: 0;
+    @include textStyle($black, 80px, 400, $line-height: 70px, $letter-spacing: 0.5px, $text-align: right);
+  }
+  .news-wrapper {
+    width: 51.5%;
+  }
+  .events-wrapper {
+    width: 48.5%;
+    padding: 0 0 51.47px 40px;
+    h4 {
+      @include textStyle(#841ae3, 28px, 400, $line-height: 36px, $letter-spacing: 1.5px, $text-align: center);
+    }
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .news-and-articles-container {
+    padding: 30px 50px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 20px;
+    }
+  }
+  h3 {
+    @include textStyle($black, 57px, 400, $line-height: 64px, $letter-spacing: 1.5px, $text-transform: capitalize);
+  }
+  h3.articles {
+    display: none;
+  }
+  .news-wrapper {
+    width: 100%;
+  }
+  .articles-after{
+    display: flex;
+    align-self: flex-end;
+    padding: 20px 0 0;
+    @include textStyle($black, 57px, 400, $line-height: 64px, $letter-spacing: 1.5px, $text-align: right);
+  }
+  .events-wrapper {
+    width: 100%;
+    gap: 17px;
+    padding: 62px 0 51px 0;
+    h4 {
+      @include textStyle(#841ae3, 28px, 400, $line-height: 36px, $letter-spacing: 1.5px, $text-align: center);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .news-and-articles-container {
+    padding: 30px 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .news-and-articles-container {
+    padding: 30px 16px;
+    & > div {
+      padding-top: 20px;
+    }
+  }
+}
