@@ -1,8 +1,7 @@
 {
   "common": {
     "SEARCH": "search",
-    "STUDENTS": "students",
-    "PARENTS": "parents"
+    "READ_MORE": "Read more"
   },
   "lang": {
     "GEO": "Georgian",
@@ -36,5 +35,12 @@
     "ADMISSION": "ADMISSION",
     "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
     "ENROLLMENT": "Enrollment"
-  }
+  },
+  "LIST_IS_EMPTY": "List Is Empty",
+  "STUDENTS": "students",
+  "PARENTS": "parents",
+  "UPCOMING_EVENTS": "Upcoming Events",
+  "NEWS": "news",
+  "NEWS_AND": "News &",
+  "ARTICLES": "articles"
 }

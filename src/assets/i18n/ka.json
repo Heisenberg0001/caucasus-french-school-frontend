@@ -1,8 +1,7 @@
 {
   "common": {
     "SEARCH": "ძებნა",
-    "STUDENTS": "სტუდენტები",
-    "PARENTS": "მშობლები"
+    "READ_MORE": "მეტის წაკითხვა"
   },
   "lang": {
     "GEO": "ქართული",
@@ -36,5 +35,12 @@
     "ADMISSION": "ADMISSION",
     "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
     "ENROLLMENT": "Enrollment"
-  }
+  },
+  "LIST_IS_EMPTY": "სია ცარიელია",
+  "STUDENTS": "სტუდენტები",
+  "PARENTS": "მშობლები",
+  "UPCOMING_EVENTS": "მომავალი ღონისძიებები",
+  "NEWS": "სიახლეები",
+  "ARTICLES": "სტატიები",
+  "NEWS_AND": "სიახლეები და"
 }

@@ -4,9 +4,14 @@ import { HomeComponent } from './pages';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
     /* loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent), */
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
 ];
 

@@ -1,0 +1,11 @@
+<div class="event-card">
+  <div class="event-date">
+    <span> {{ date }} </span>
+  </div>
+  <div class="event-content">
+    <p class="dots">
+      <ng-content></ng-content>
+    </p>
+    <span class="event-time">{{ timeInterval.from }} - {{ timeInterval.to }} </span>
+  </div>
+</div>
