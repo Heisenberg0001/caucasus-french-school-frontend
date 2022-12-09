@@ -1,0 +1,20 @@
+<p-carousel
+  [value]="stories"
+  [numVisible]="1"
+  [numScroll]="1"
+  [autoplayInterval]="3000"
+  [circular]="true"
+  [showIndicators]="false"
+  [showNavigators]="false">
+  <ng-template let-story pTemplate="item">
+    <div class="story-container disable-select">
+      <span class="student-name">{{ story.student }}</span>
+      <img src="{{ '../../../../assets/images/' + story.imgSrc }}" alt="An alumni"/>
+      <div class="student-story">
+        <p>{{ story.story }}</p>
+        <!-- TODO: add link to the student page -->
+        <a routerLink="{{ '/'+story.relativePath }}">{{ 'READ_MORE' | translate }}...</a>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
