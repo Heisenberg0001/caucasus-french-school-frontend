@@ -1,8 +1,14 @@
 {
-  "common": {
-    "SEARCH": "search",
-    "READ_MORE": "Read more"
-  },
+  "SEARCH": "search",
+  "READ_MORE": "Read more",
+  "STUDENTS": "students",
+  "PARENTS": "parents",
+  "CONTACT": "CONTACT",
+  "LIST_IS_EMPTY": "List Is Empty",
+  "UPCOMING_EVENTS": "Upcoming Events",
+  "NEWS": "news",
+  "NEWS_AND": "News &",
+  "ARTICLES": "articles",
   "lang": {
     "GEO": "Georgian",
     "ENG": "English",
@@ -36,11 +42,13 @@
     "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
     "ENROLLMENT": "Enrollment"
   },
-  "LIST_IS_EMPTY": "List Is Empty",
-  "STUDENTS": "students",
-  "PARENTS": "parents",
-  "UPCOMING_EVENTS": "Upcoming Events",
-  "NEWS": "news",
-  "NEWS_AND": "News &",
-  "ARTICLES": "articles"
+  "footer" : {
+    "HEAD_MASTER": "HEAD MASTER",
+    "ADMINISTRATION": "ADMINISTRATION",
+    "SCHOOL_OFFICE": "SCHOOL OFFICE",
+    "admin_people": {
+      "KAMEL_YASSILI": "Kamel Yassili",
+      "TAMAR_LOMIDZE": "Tamar Lomidze"
+    }
+  }
 }

@@ -23,7 +23,6 @@
       .social-media__list {
         padding: 60px 19px;
 
-        border-radius: 0 15px 15px 0;
         background-color: rgba(0, 27, 62, 0.19);
         backdrop-filter: blur(8px);
 
@@ -49,163 +48,176 @@
 
       color: white;
 
-      .info__admin {
-        width: 462px;
-        height: 276px;
-      }
-      .admin {
-        background-color: rgba(0, 27, 62, 0.19);
-        backdrop-filter: blur(8px);
+      .info__details {
+        display: flex;
 
-        .admin__list {
-          padding: 80px 34.5px 33px 30.5px;
+        .info__admin {
+          width: 462px;
+          height: 276px;
+        }
+        .admin {
+          background-color: rgba(0, 27, 62, 0.19);
+          backdrop-filter: blur(8px);
 
-          display: flex;
+          .admin__list {
+            padding: 80px 34.5px 33px 30.5px;
 
-          .admin__item {
-            &:not(:last-child) {
-              margin: 0 25px 0 0;
+            display: flex;
+
+            .admin__item {
+              &:not(:last-child) {
+                margin: 0 25px 0 0;
+              }
+              .admin__title {
+                margin: 0 0 15px 0;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 30px;
+              }
+              .admin__identity {
+                margin: 0 0 17px 0;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+              }
+              .admin__telephone {
+                margin: 0 0 5px 0;
+
+                display: flex;
+
+                .admin__telephone__icon {
+                  margin: 2px 8px 0 0;
+
+                  img {
+                  }
+                }
+                .admin__telephone__text {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+
+                  letter-spacing: 0.25px;
+                }
+              }
+              .admin__email {
+                display: flex;
+
+                .admin__email__icon {
+                  margin: 0 4px 0 0;
+
+                  img {
+                  }
+                }
+                .admin__email__text {
+                  margin: 1px 0 0 0;
+
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+
+                  letter-spacing: 0.25px;
+                }
+              }
             }
-            .admin__title {
-              margin: 0 0 15px 0;
+          }
+        }
+        .info__school-office {
+          width: 462px;
+          height: 276px;
+        }
+        .school-office {
+          padding: 80px 0 0 44px;
 
+          background-color: #001b3d;
+          opacity: 0.77;
+          backdrop-filter: blur(25px);
+
+          .school-office__title {
+            margin: 0 0 28px 0;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+
+            letter-spacing: 0.01em;
+          }
+          .school-office__telephone {
+            margin: 0 0 10px 0;
+
+            display: flex;
+
+            .school-office__telephone__icon {
+              margin: 3px 8px 0 0;
+            }
+            .school-office__telephone__text {
               font-style: normal;
               font-weight: 400;
               font-size: 22px;
               line-height: 30px;
             }
-            .admin__identity {
-              margin: 0 0 17px 0;
+          }
+          .school-office__email {
+            display: flex;
 
+            .school-office__email__icon {
+              margin: 3px 5px 0 0;
+            }
+            .school-office__email__text {
               font-style: normal;
               font-weight: 400;
-              font-size: 18px;
-              line-height: 24px;
+              font-size: 22px;
+              line-height: 30px;
             }
-            .admin__telephone {
-              margin: 0 0 5px 0;
-
-              display: flex;
-
-              .admin__telephone__icon {
-                margin: 2px 8px 0 0;
-
-                img {
-                }
-              }
-              .admin__telephone__text {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 20px;
-
-                letter-spacing: 0.25px;
-              }
-            }
-            .admin__email {
-              display: flex;
-
-              .admin__email__icon {
-                margin: 0 4px 0 0;
-
-                img {
-                }
-              }
-              .admin__email__text {
-                margin: 1px 0 0 0;
-
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 20px;
-
-                letter-spacing: 0.25px;
-              }
+          }
+          .school-office__contact-button {
+            display: none;
+            .school-office__contact-button__link {
             }
           }
         }
       }
-      .info__school-office {
-        width: 462px;
-        height: 276px;
-      }
-      .school-office {
-        padding: 80px 0 0 44px;
+      .info__navigation {
+        display: flex;
 
-        background-color: #001b3d;
-        opacity: 0.77;
-        backdrop-filter: blur(25px);
-
-        .school-office__title {
-          margin: 0 0 28px 0;
-
-          font-style: normal;
-          font-weight: 400;
-          font-size: 28px;
-          line-height: 36px;
-
-          letter-spacing: 0.01em;
+        .info__logos {
+          width: 462px;
+          height: 105px;
         }
-        .school-office__telephone {
-          margin: 0 0 10px 0;
+        .logos {
+          background-color: white;
 
-          display: flex;
+          .logos__list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
-          .school-office__telephone__icon {
-            margin: 3px 8px 0 0;
-          }
-          .school-office__telephone__text {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 30px;
+            .logos__item {
+            }
           }
         }
-        .school-office__email {
-          display: flex;
-
-          .school-office__email__icon {
-            margin: 3px 5px 0 0;
-          }
-          .school-office__email__text {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 30px;
-          }
+        .info__map {
+          width: 462px;
+          height: 276px;
         }
-      }
-      .info__logos {
-        width: 462px;
-        height: 105px;
-      }
-      .logos {
-        background-color: white;
-
-        .logos__list {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-
-          .logos__item {
-          }
+        .map {
         }
-      }
-      .info__map {
-        width: 462px;
-        height: 276px;
-      }
-      .map {
       }
     }
   }
 }
 
-/* Medium devices */
 @media only screen and (max-width: 1030px) {
   .footer {
     .footer__container {
       .footer__social-media {
+        min-width: 65px;
       }
       .social-media {
         .social-media__list {
@@ -221,86 +233,349 @@
         max-width: 721px;
       }
       .info {
-        .info__admin {
-          width: 360px;
-        }
-        .admin {
-          .admin__list {
-            padding: 80px 20.5px 33px 24.5px;
+        .info__details {
+          .info__admin {
+            width: 380px;
+          }
+          .admin {
+            .admin__list {
+              padding: 80px 20.5px 33px 24.5px;
 
-            .admin__item {
-              .admin__title {
-                font-size: 18.0889px;
-                line-height: 25px;
+              .admin__item {
+                .admin__title {
+                  font-size: 18.0889px;
+                  line-height: 25px;
+                }
+                .admin__identity {
+                  font-size: 14.8px;
+                  line-height: 20px;
+                }
+                .admin__telephone {
+                  .admin__telephone__icon {
+                    margin: 0 8px 0 0;
+                  }
+                  .admin__telephone__text {
+                    margin: 3px 0 0 0;
+
+                    font-size: 11.5111px;
+                    line-height: 16px;
+                    letter-spacing: 0.205556px;
+                  }
+                }
+                .admin__email {
+                  .admin__email__icon {
+                  }
+                  .admin__email__text {
+                    margin: 3px 0 0 0;
+
+                    font-size: 11.5111px;
+                    line-height: 16px;
+                    letter-spacing: 0.205556px;
+                  }
+                }
               }
-              .admin__identity {
-                font-size: 14.8px;
+            }
+          }
+          .info__school-office {
+            width: 340px;
+            height: 276px;
+          }
+          .school-office {
+            .school-office__title {
+              font-size: 23.437px;
+              line-height: 30px;
+
+              letter-spacing: 0.01em;
+            }
+            .school-office__telephone {
+              .school-office__telephone__icon {
+              }
+              .school-office__telephone__text {
+                font-size: 17.4148px;
+                line-height: 23px;
+              }
+            }
+            .school-office__email {
+              .school-office__email__icon {
+              }
+              .school-office__email__text {
+                margin: 3px 0 0 0;
+
+                font-size: 17.4148px;
+                line-height: 23px;
+                letter-spacing: 0.205556px;
+              }
+            }
+            .school-office__contact-button {
+              .school-office__contact-button__link {
+              }
+            }
+          }
+        }
+        .info__navigation {
+          .info__logos {
+            width: 380px;
+          }
+          .logos {
+            logos__list {
+              .logos__item {
+              }
+            }
+          }
+          .info__map {
+            width: 340px;
+          }
+          .map {
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices */
+@media only screen and (max-width: 833px) {
+  .footer {
+    .footer__container {
+      .footer__social-media {
+      }
+      .social-media {
+        .social-media__list {
+          .social-media__item {
+            .social-media__link {
+              .social-media__logo {
+              }
+            }
+          }
+        }
+      }
+      .footer__info {
+        max-width: 380px;
+        height: auto;
+      }
+      .info {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .info__details {
+          flex-direction: column;
+
+          .info__admin {
+            width: 100%;
+          }
+          .admin {
+            height: 200px;
+
+            .admin__list {
+              padding: 40px 20.5px;
+
+              .admin__item {
+                .admin__title {
+                  font-size: 18.0889px;
+                  line-height: 25px;
+                }
+                .admin__identity {
+                  font-size: 14.8px;
+                  line-height: 20px;
+                }
+                .admin__telephone {
+                  .admin__telephone__icon {
+                  }
+                  .admin__telephone__text {
+                    font-size: 11.5111px;
+                    line-height: 16px;
+
+                    letter-spacing: 0.205556px;
+                  }
+                }
+                .admin__email {
+                  .admin__email__icon {
+                  }
+                  .admin__email__text {
+                    font-size: 11.5111px;
+                    line-height: 16px;
+
+                    letter-spacing: 0.205556px;
+                  }
+                }
+              }
+            }
+          }
+          .info__school-office {
+            width: 100%;
+            height: 180px;
+          }
+          .school-office {
+            padding: 35px 0 0 32px;
+
+            .school-office__title {
+              font-size: 23.437px;
+              line-height: 30px;
+
+              letter-spacing: 0.01em;
+            }
+            .school-office__telephone {
+              .school-office__telephone__icon {
+                margin: 0 8px 0 0;
+              }
+              .school-office__telephone__text {
+                font-size: 17.4148px;
+                line-height: 23px;
+              }
+            }
+            .school-office__email {
+              .school-office__email__icon {
+              }
+              .school-office__email__text {
+                font-size: 17.4148px;
+                line-height: 23px;
+              }
+            }
+            .school-office__contact-button {
+              .school-office__contact-button__link {
+              }
+            }
+          }
+        }
+        .info__navigation {
+          flex-direction: column;
+
+          .info__logos {
+            width: 100%;
+          }
+          .logos {
+            .logos__list {
+              .logos__item {
+              }
+            }
+          }
+          .info__map {
+            width: 100%;
+          }
+          .map {
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 500px) {
+  .footer {
+    .footer__container {
+      position: relative;
+
+      .footer__social-media {
+      }
+      .social-media {
+        .social-media__list {
+          .social-media__item {
+            .social-media__link {
+              .social-media__logo {
+              }
+            }
+          }
+        }
+      }
+      .footer__info {
+      }
+      .info {
+        .info__details {
+          .info__admin {
+          }
+          .admin {
+            display: none;
+
+            .admin__list {
+              .admin__item {
+                .admin__title {
+                }
+                .admin__identity {
+                }
+                .admin__telephone {
+                  .admin__telephone__icon {
+                  }
+                  .admin__telephone__text {
+                  }
+                }
+                .admin__email {
+                  .admin__email__icon {
+                  }
+                  .admin__email__text {
+                  }
+                }
+              }
+            }
+          }
+          .info__school-office {
+          }
+          .school-office {
+            padding: 30px 20px;
+
+            .school-office__title {
+              font-size: 22px;
+              line-height: 30px;
+            }
+            .school-office__telephone {
+              .school-office__telephone__icon {
+              }
+              .school-office__telephone__text {
+                font-size: 14px;
                 line-height: 20px;
               }
-              .admin__telephone {
-                .admin__telephone__icon {
-                }
-                .admin__telephone__text {
-                  font-size: 11.5111px;
-                  line-height: 16px;
-
-                  letter-spacing: 0.205556px;
-                }
+            }
+            .school-office__email {
+              .school-office__email__icon {
               }
-              .admin__email {
-                .admin__email__icon {
-                }
-                .admin__email__text {
-                  font-size: 11.5111px;
-                  line-height: 16px;
-
-                  letter-spacing: 0.205556px;
-                }
+              .school-office__email__text {
+                font-size: 14px;
+                line-height: 20px;
               }
             }
-          }
-        }
-        .info__school-office {
-          width: 360px;
-          height: 276px;
-        }
-        .school-office {
-          .school-office__title {
-            font-size: 23.437px;
-            line-height: 30px;
+            .school-office__contact-button {
+              display: block;
 
-            letter-spacing: 0.01em;
-          }
-          .school-office__telephone {
-            .school-office__telephone__icon {
-            }
-            .school-office__telephone__text {
-              font-size: 17.4148px;
-              line-height: 23px;
-            }
-          }
-          .school-office__email {
-            .school-office__email__icon {
-            }
-            .school-office__email__text {
-              font-size: 17.4148px;
-              line-height: 23px;
-            }
-          }
-        }
-        .info__logos {
-          width: 360px;
-        }
-        .logos {
-          logos__list {
-            .logos__item {
+              .school-office__contact-button__link {
+                position: absolute;
+                width: 221px;
+                left: 0;
+                bottom: -55px;
+
+                padding: 20px 30px 20px 30px;
+
+                border: 0.5px solid #eef0fa;
+                background: #001b3d;
+
+                text-align: center;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+              }
             }
           }
         }
-        .info__map {
-          width: 360px;
-        }
-        .map {
+        .info__navigation {
+          width: 100%;
+
+          position: absolute;
+          bottom: -100px;
+          left: 0;
+
+          .info__logos {
+          }
+          .logos {
+            .logos__list {
+              .logos__item {
+              }
+            }
+          }
+          .info__map {
+          }
+          .map {
+          }
         }
       }
     }
