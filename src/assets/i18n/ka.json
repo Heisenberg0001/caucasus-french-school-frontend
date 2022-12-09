@@ -1,8 +1,14 @@
 {
-  "common": {
-    "SEARCH": "ძებნა",
-    "READ_MORE": "მეტის წაკითხვა"
-  },
+  "SEARCH": "ძებნა",
+  "READ_MORE": "მეტის წაკითხვა",
+  "STUDENTS": "სტუდენტები",
+  "PARENTS": "მშობლები",
+  "CONTACT": "კონტაქტი",
+  "LIST_IS_EMPTY": "სია ცარიელია",
+  "UPCOMING_EVENTS": "მომავალი ღონისძიებები",
+  "NEWS": "სიახლეები",
+  "ARTICLES": "სტატიები",
+  "NEWS_AND": "სიახლეები და",
   "lang": {
     "GEO": "ქართული",
     "ENG": "ინგლისური",
@@ -36,11 +42,13 @@
     "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
     "ENROLLMENT": "Enrollment"
   },
-  "LIST_IS_EMPTY": "სია ცარიელია",
-  "STUDENTS": "სტუდენტები",
-  "PARENTS": "მშობლები",
-  "UPCOMING_EVENTS": "მომავალი ღონისძიებები",
-  "NEWS": "სიახლეები",
-  "ARTICLES": "სტატიები",
-  "NEWS_AND": "სიახლეები და"
+  "footer" : {
+    "HEAD_MASTER": "დირექტორი",
+    "ADMINISTRATION": "ადმინისტრატორი",
+    "SCHOOL_OFFICE": "სკოლის ოფისი",
+    "admin_people": {
+      "KAMEL_YASSILI": "ქამელ იასილი",
+      "TAMAR_LOMIDZE": "თამარ ლომიძე"
+    }
+  }
 }
