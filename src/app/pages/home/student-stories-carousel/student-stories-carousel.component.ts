@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
-  selector: 'app-alumni-stories-carousel',
-  templateUrl: './alumni-stories-carousel.component.html',
-  styleUrls: ['./alumni-stories-carousel.component.scss'],
+  selector: 'app-student-stories-carousel',
+  templateUrl: './student-stories-carousel.component.html',
+  styleUrls: ['./student-stories-carousel.component.scss']
 })
-export class AlumniStoriesCarouselComponent implements OnInit {
+export class StudentStoriesCarouselComponent implements OnInit {
   stories: StudentStory[] = [];
   constructor() {}
 
@@ -51,3 +50,4 @@ const STORIES: StudentStory[] = [
     relativePath: '',
   },
 ];
+
