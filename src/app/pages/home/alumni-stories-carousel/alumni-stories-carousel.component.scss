@@ -1,0 +1,118 @@
+@import 'src/styles';
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.story-container {
+  width: 100%;
+  height: 980px;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: 50% 0; /* crop left/right sides symmetrically and contain top, crop bottom */
+  }
+}
+
+.student-name {
+  position: absolute;
+  left: 146.27px;
+  top: 106.38px;
+  @include textStyle_Georgian($white, 75px, 400, $line-height: 85px, $letter-spacing: 0.67px, $text-transform: capitalize);
+}
+
+.student-story {
+  width: 664.86px;
+  min-height: 247.95px;
+  position: absolute;
+  right: 66.28px;
+  bottom: 66.49px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @include textStyle_Georgian($white, 28px, 400, $line-height: 36px, $letter-spacing: 0.01em, $text-align: left);
+  a {
+    margin-top: 20px;
+    color: $secondary4;
+    cursor: pointer;
+  }
+}
+
+/************************** RESPONSIVE **************************/
+
+@media only screen and (max-width: 1921px) {
+  .story-container {
+    height: 980px;
+  }
+  .student-name {
+    left: 110px;
+    top: 80px;
+    @include textStyle_Georgian($white, 57px, 400, $line-height: 64px, $letter-spacing: -0.25, $text-transform: capitalize);
+  }
+  .student-story {
+    width: 500px;
+    right: 50px;
+    bottom: 50px;
+    @include textStyle_Georgian($white, 22px, 400, $line-height: 28px, $letter-spacing: 0.01em, $text-align: left);
+    a {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .story-container {
+    height: 737px;
+  }
+  .student-name {
+    left: 63.58px;
+    top: 46.24px;
+    @include textStyle_Georgian($white, 32px, 400, $line-height: 40px, $letter-spacing: -0.25, $text-transform: capitalize);
+  }
+  .student-story {
+    width: 345px;
+    right: 29px;
+    bottom: 29px;
+    @include textStyle_Georgian($white, 16px, 400, $line-height: 24px, $letter-spacing: 0.5px, $text-align: left);
+    a {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .story-container {
+    height: 496px;
+  }
+  .student-name {
+    left: 18px;
+    top: 18px;
+    @include textStyle_Georgian($white, 28px, 400, $line-height: 36px, $letter-spacing: 0.01em, $text-transform: capitalize);
+  }
+  .student-story {
+    width: 265px;
+    right: 18px;
+    bottom: 18px;
+    @include textStyle_Georgian($white, 12px, 400, $line-height: 16px, $letter-spacing: 0.4px, $text-align: left);
+    a {
+      margin-top: 15px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .story-container {
+    height: 343px;
+  }
+  .student-story {
+    width: 230px;
+    right: 10px;
+    bottom: 18px;
+  }
+}
