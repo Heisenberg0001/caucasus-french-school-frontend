@@ -1,0 +1,737 @@
+@import 'src/styles';
+
+.admission-and-contact-container {
+  width: 100%;
+  height: 1414px;
+  padding: 200px 128px 230px;
+}
+
+.inner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.left-container {
+  width: 50%;
+  height: 100%;
+  padding-bottom: 152.56px;
+  border: 1.3717px solid #001b3e;
+  background-image: url('../../../../assets/images/home-admissions-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  a {
+    @include textStyle(#841ae3, 100px, 400, $line-height: 76px, $letter-spacing: -0.5px, $text-transform: capitalize);
+    transition: 1s;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.right-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  & > span {
+    @include textStyle(#841ae3, 50px, 400, $line-height: 45px, $letter-spacing: 1.5px, $text-transform: capitalize);
+  }
+
+  & > div {
+    width: 100%;
+    height: 60%;
+    padding-bottom: 146.56px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1.37px solid #001b3e;
+
+    span {
+      display: inline-block;
+      padding-bottom: 5px;
+      @include textStyle($black, 100px, 400, $line-height: 76px, $letter-spacing: -0.5px, $text-transform: lowercase);
+      cursor: pointer;
+      transition: 1s;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid $black;
+      }
+    }
+  }
+}
+
+.overlay-container {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  height: 544.57px;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.overlay-left {
+  width: 521.25px;
+  height: 100%;
+  padding-left: 60px;
+  background: $primary1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  border: 1.3717px solid #001b3e;
+
+  box-shadow: -4px 2px 5px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 2px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 2px 5px -3px rgba(0, 0, 0, 0.75);
+
+  a:first-of-type {
+    @include textStyle($white, 65px, 400, $line-height: 63px, $letter-spacing: -0.417267px, $text-transform: capitalize);
+    transition: 0.5s;
+    &:hover {
+      font-size: 68px;
+    }
+  }
+  a:not(a:first-of-type) {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    @include textStyle_Georgian($white, 38px, 400, $line-height: 49px, $letter-spacing: 0.01em, $text-transform: capitalize);
+    img {
+      margin-left: 15px;
+      transition: 0.5s;
+    }
+    &:hover {
+      border-bottom: 1px solid $white;
+      img {
+        filter: invert(100%) sepia(30%) saturate(6103%) hue-rotate(273deg) brightness(80%) contrast(98%);
+      }
+    }
+  }
+}
+
+.overlay-right {
+  width: 521.25px;
+  height: 100%;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1.3717px solid #001b3e;
+  overflow: hidden;
+  position: relative;
+  img {
+    position: absolute;
+    bottom: -1px;
+    right: -1.5px;
+  }
+  .number {
+    @include textStyle(#841ae3, 274.341px, 400, $line-height: 270px, $letter-spacing: -1.22731px, $text-align: center);
+  }
+  .month {
+    font-size: 72px;
+    @include textStyle($black, 3.5vw, 400, $line-height: 104px, $letter-spacing: -0.685851px, $text-transform: capitalize, $text-align: center);
+  }
+  .day {
+    margin-bottom: 108px;
+    @include textStyle_Georgian(
+      $black,
+      43.8945px,
+      700,
+      $line-height: 55px,
+      $letter-spacing: -0.685851px,
+      $text-transform: capitalize,
+      $text-align: center
+    );
+  }
+
+  &:hover {
+    .hovered {
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+.hovered {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  padding: 40px;
+  background: $white;
+  overflow: hidden;
+  cursor: context-menu;
+  transition: 1s;
+
+  div {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    span {
+      @include textStyle($secondary4, 38px, 400, $line-height: 49px, $text-transform: capitalize);
+    }
+    span:first-child {
+      @include textStyle($black, 38px, 400, $line-height: 49px, $text-transform: capitalize);
+    }
+  }
+  p {
+    width: 100%;
+    max-height: 200px; // 2*50
+    margin-bottom: 10px;
+    @include nth-line-dots($lineNumber: 4);
+    @include textStyle_Georgian($black, 38px, 400, $line-height: 49px, $text-transform: none);
+  }
+  & > span {
+    @include textStyle_Georgian($secondary4, 38px, 400, $line-height: 49px, $text-transform: none);
+    cursor: pointer;
+  }
+}
+
+/************************** RESPONSIVE **************************/
+
+@media only screen and (max-width: 1640px) {
+  .admission-and-contact-container {
+    height: 994px;
+    padding: 138px 112px;
+  }
+
+  .left-container {
+    padding-bottom: 107px;
+    a {
+      font-size: 75px;
+      line-height: 57px;
+    }
+  }
+
+  .right-container {
+    & > span {
+      font-size: 45px;
+      line-height: 30px;
+    }
+    & > div {
+      height: 55%;
+      padding-bottom: 101px;
+      span {
+        font-size: 75px;
+        line-height: 64px;
+      }
+    }
+  }
+
+  .overlay-container {
+    top: 50px;
+    height: 397px;
+  }
+
+  .overlay-left {
+    width: 380px;
+    padding-left: 44px;
+    a:first-of-type {
+      font-size: 48px;
+      line-height: 46px;
+      &:hover {
+        font-size: 50px;
+      }
+    }
+    a:not(a:first-of-type) {
+      font-size: 28px;
+      line-height: 36px;
+      img {
+        height: 26.6px;
+        width: 21.3px;
+      }
+    }
+  }
+
+  .overlay-right {
+    width: 380px;
+    img {
+      height: 102px;
+      width: 134.26px;
+    }
+    .number {
+      font-size: 200px;
+      line-height: 220px;
+    }
+    .month {
+      font-size: 50px;
+      line-height: 76px;
+    }
+    .day {
+      margin-bottom: 80px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .hovered {
+    padding: 30px;
+    div {
+      padding-bottom: 10px;
+      span {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      span:first-child {
+        font-size: 28px;
+        line-height: 46px;
+      }
+    }
+    p {
+      font-size: 28px;
+      line-height: 36px;
+      max-height: 144px; // 2*36
+      margin-bottom: 10px;
+    }
+    & > span {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .admission-and-contact-container {
+    height: 840px;
+    padding: 122px 74px;
+  }
+
+  .left-container {
+    padding-bottom: 80px;
+    a {
+      font-size: 60px;
+      line-height: 57px;
+    }
+  }
+
+  .right-container {
+    & > span {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    & > div {
+      height: 55%;
+      padding-bottom: 74px;
+      span {
+        font-size: 60px;
+        line-height: 57px;
+      }
+    }
+  }
+
+  .overlay-container {
+    top: 50px;
+    height: 327px;
+  }
+
+  .overlay-left {
+    width: 313px;
+    padding-left: 31px;
+    a:first-of-type {
+      font-size: 38px;
+      line-height: 42px;
+      &:hover {
+        font-size: 40px;
+      }
+    }
+    a:not(a:first-of-type) {
+      font-size: 24px;
+      line-height: 28px;
+      img {
+        height: 26.6px;
+        width: 21.3px;
+      }
+    }
+  }
+
+  .overlay-right {
+    width: 313px;
+    img {
+      height: 102px;
+      width: 134.26px;
+    }
+    .number {
+      font-size: 165px;
+      line-height: 180px;
+    }
+    .month {
+      font-size: 42px;
+      line-height: 60px;
+    }
+    .day {
+      margin-bottom: 70px;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  .hovered {
+    padding: 30px;
+    div {
+      padding-bottom: 10px;
+      span {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      span:first-child {
+        font-size: 28px;
+        line-height: 46px;
+      }
+    }
+    p {
+      font-size: 28px;
+      line-height: 36px;
+      max-height: 144px; // 2*36
+      margin-bottom: 10px;
+      @include nth-line-dots($lineNumber: 3);
+    }
+    & > span {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .admission-and-contact-container {
+    height: 685px;
+    padding: 106px 24px 114px;
+  }
+
+  .left-container {
+    padding-bottom: 53.83px;
+    a {
+      font-size: 45px;
+      line-height: 52px;
+    }
+  }
+
+  .right-container {
+    & > span {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    & > div {
+      height: 55%;
+      padding-bottom: 47.83px;
+      span {
+        font-size: 45px;
+        line-height: 52px;
+      }
+    }
+  }
+
+  .overlay-container {
+    top: 44px;
+    height: 257px;
+  }
+
+  .overlay-left {
+    width: 246px;
+    padding-left: 18px;
+    a:first-of-type {
+      font-size: 28px;
+      line-height: 36px;
+      &:hover {
+        font-size: 30px;
+      }
+    }
+    a:not(a:first-of-type) {
+      font-size: 18px;
+      line-height: 22px;
+      img {
+        width: 14px;
+        height: 17px;
+      }
+    }
+  }
+
+  .overlay-right {
+    width: 246px;
+    img {
+      height: 66px;
+      width: 87px;
+    }
+    .number {
+      font-size: 129.489px;
+      line-height: 140px;
+    }
+    .month {
+      font-size: 32px;
+      line-height: 52px;
+    }
+    .day {
+      margin-bottom: 46px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  .hovered {
+    padding: 24px;
+    div {
+      padding-bottom: 10px;
+      span {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      span:first-child {
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      max-height: 72px;
+      margin-bottom: 6px;
+      @include nth-line-dots($lineNumber: 3);
+    }
+    & > span {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .admission-and-contact-container {
+    height: 650px;
+    padding: 92px 20px 102px;
+  }
+
+  .left-container {
+    padding-bottom: 68px;
+    a {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  .right-container {
+    & > span {
+      font-size: 24px;
+      line-height: 16px;
+    }
+    & > div {
+      padding-bottom: 64px;
+      span {
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+  }
+
+  .overlay-container {
+    top: 40px;
+    height: 221px;
+  }
+
+  .overlay-left {
+    width: 211px;
+    padding-left: 18px;
+    a:first-of-type {
+      font-size: 24px;
+      line-height: 38px;
+      &:hover {
+        font-size: 28px;
+      }
+    }
+    a:not(a:first-of-type) {
+      font-size: 14.5px;
+      line-height: 16px;
+      img {
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .overlay-right {
+    width: 211px;
+    img {
+      height: 66px;
+      width: 87px;
+    }
+    .number {
+      font-size: 120px;
+      line-height: 130px;
+    }
+    .month {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .day {
+      margin-bottom: 46px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .hovered {
+    padding: 18px;
+    div {
+      padding-bottom: 10px;
+      span {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      span:first-child {
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      max-height: 72px;
+      margin-bottom: 6px;
+      @include nth-line-dots($lineNumber: 3);
+    }
+    & > span {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .admission-and-contact-container {
+    height: fit-content;
+    padding: 78px 17px 399px; // bottom: 309px + 90px
+  }
+  .inner-container {
+    width: 100%;
+    height: 254px;
+    position: relative;
+  }
+
+  .left-container {
+    padding-bottom: 26px;
+    a {
+      font-size: 23.4364px;
+      line-height: 18px;
+    }
+  }
+
+  .right-container {
+    justify-content: flex-end;
+    & > span {
+      position: absolute;
+      top: -25px;
+      right: 0;
+      font-size: 13.7812px;
+      line-height: 18px;
+    }
+    & > div {
+      width: 100%;
+      height: 69px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    height: 184.8px;
+  }
+
+  .overlay-left {
+    position: absolute;
+    bottom: -378px; //309+69
+    left: 0;
+    width: 100%;
+    height: 309px;
+    padding: 46px 59px;
+    justify-content: space-between;
+    box-shadow: none;
+    a:first-of-type {
+      font-size: 36px;
+      line-height: 44px;
+      &:hover {
+        font-size: 38px;
+      }
+    }
+    a:not(a:first-of-type) {
+      font-size: 24px;
+      line-height: 32px;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .overlay-right {
+    width: 50%;
+    img {
+      height: 43.8px;
+      width: 60px;
+    }
+    .number {
+      font-size: 80px;
+      line-height: 88px;
+    }
+    .month {
+      font-size: 36.3249px;
+      font-size: 5vw;
+      line-height: 33px;
+    }
+    .day {
+      font-size: 13.864px;
+      line-height: 17px;
+      margin-bottom: 26px;
+    }
+  }
+
+  .hovered {
+    padding: 24px;
+    div {
+      padding-bottom: 6px;
+      span {
+        font-size: 16px;
+        font-size: 3vw;
+        line-height: 18px;
+      }
+      span:first-child {
+        font-size: 16px;
+        font-size: 3vw;
+        line-height: 28px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 18px;
+      max-height: 36px;
+      margin-bottom: 6px;
+      @include nth-line-dots($lineNumber: 2);
+    }
+    & > span {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<div class="admission-and-contact-container">
+  <div class="inner-container disable-select">
+    <div class="left-container">
+      <a href="#" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'CAFETERIA' | translate }}</a>
+    </div>
+    <div class="right-container">
+      <span [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'ANNUAL_CALENDAR' | translate }}</span>
+      <div>
+        <span (click)="openWriteUsDialog()" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'WRITE_US' | translate }}</span>
+      </div>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay-left">
+        <a href="#" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ 'ADMISSION' | translate }}</a>
+        <a [href]="registrationForm$ | async" download [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }"
+          >{{ 'REGISTRATION_FORM' | translate }} <img src="assets/icons/file.svg" alt="document"
+        /></a>
+        <a [href]="bankDetails$ | async" download [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }"
+          >{{ 'BANK_DETAILS' | translate }} <img src="assets/icons/file.svg" alt="document"
+        /></a>
+      </div>
+      <div class="overlay-right">
+        <span class="number font-berkshire-swash-regular">{{ dayNumber }}</span>
+        <span class="month" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ month | translate }}</span>
+        <span class="day" [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }">{{ weekDay | translate }}</span>
+        <img src="assets/images/home-admissions-vector.png" alt="decoration" />
+        <div class="hovered">
+          <div>
+            <span [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }"> {{ dayNumber + ' ' + (month | translate) }} </span>
+            <span [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }"> {{ weekDay | translate }}</span>
+          </div>
+          <p>{{ hoverText | translate }}</p>
+          <span [ngClass]="{ 'font-archy-bold': currentLangIsGeorgian }"> {{ 'SEE_MORE' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
