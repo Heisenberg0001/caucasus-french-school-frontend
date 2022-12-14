@@ -1,6 +1,7 @@
 {
   "SEARCH": "search",
   "READ_MORE": "Read more",
+  "SEE_MORE": "See more",
   "STUDENTS": "students",
   "PARENTS": "parents",
   "CONTACT": "CONTACT",
@@ -9,6 +10,35 @@
   "NEWS": "news",
   "NEWS_AND": "News &",
   "ARTICLES": "articles",
+  "CAFETERIA": "Cafeteria",
+  "ANNUAL_CALENDAR": "Annual Calendar",
+  "WRITE_US": "Write Us",
+  "ADMISSION": "Admission",
+  "REGISTRATION_FORM": "Registration Form",
+  "BANK_DETAILS": "Bank Details",
+  "day": {
+    "MONDAY": "Monday",
+    "TUESDAY": "Tuesday",
+    "WEDNESDAY": "Wednesday",
+    "THURSDAY": "Thursday",
+    "FRIDAY": "Friday",
+    "SATURDAY": "Saturday",
+    "SUNDAY": "Sunday"
+  },
+  "month": {
+    "JANUARY": "January",
+    "FEBRUARY": "February",
+    "MARCH": "March",
+    "APRIL": "April",
+    "MAY": "May",
+    "JUNE": "June",
+    "JULY": "July",
+    "AUGUST": "August",
+    "SEPTEMBER": "September",
+    "OCTOBER": "October",
+    "NOVEMBER": "November",
+    "DECEMBER": "December"
+  },
   "lang": {
     "GEO": "Georgian",
     "ENG": "English",
@@ -42,7 +72,7 @@
     "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
     "ENROLLMENT": "Enrollment"
   },
-  "footer" : {
+  "footer": {
     "HEAD_MASTER": "HEAD MASTER",
     "ADMINISTRATION": "ADMINISTRATION",
     "SCHOOL_OFFICE": "SCHOOL OFFICE",

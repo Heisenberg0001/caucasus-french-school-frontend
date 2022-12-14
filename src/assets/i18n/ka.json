@@ -1,6 +1,7 @@
 {
   "SEARCH": "ძებნა",
   "READ_MORE": "მეტის წაკითხვა",
+  "SEE_MORE": "მეტის ნახვა",
   "STUDENTS": "სტუდენტები",
   "PARENTS": "მშობლები",
   "CONTACT": "კონტაქტი",
@@ -9,6 +10,35 @@
   "NEWS": "სიახლეები",
   "ARTICLES": "სტატიები",
   "NEWS_AND": "სიახლეები და",
+  "CAFETERIA": "კაფეტერია",
+  "ANNUAL_CALENDAR": "წლიური კალენდარი",
+  "WRITE_US": "მოგვწერეთ",
+  "ADMISSION": "რეგისტრაცია",
+  "REGISTRATION_FORM": "ანკეტა",
+  "BANK_DETAILS": "რეკვიზიტები",
+  "day": {
+    "MONDAY": "ორშაბათი",
+    "TUESDAY": "სამშაბათი",
+    "WEDNESDAY": "ოთხშაბათი",
+    "THURSDAY": "ხუთშაბათი",
+    "FRIDAY": "პარასკევი",
+    "SATURDAY": "შაბათი",
+    "SUNDAY": "კვირა"
+  },
+  "month": {
+    "JANUARY": "იანვარი",
+    "FEBRUARY": "თებერვალი",
+    "MARCH": "მარტი",
+    "APRIL": "აპრილი",
+    "MAY": "მაისი",
+    "JUNE": "ივნისი",
+    "JULY": "ივლისი",
+    "AUGUST": "აგვისტო",
+    "SEPTEMBER": "სექტემბერი",
+    "OCTOBER": "ოქტომბერი",
+    "NOVEMBER": "ნოემბერი",
+    "DECEMBER": "დეკემბერი"
+  },
   "lang": {
     "GEO": "ქართული",
     "ENG": "ინგლისური",
@@ -42,7 +72,7 @@
     "WHY_CHOOSE_THE_FRENCH_SCHOOL": "Why Choose The French School?",
     "ENROLLMENT": "Enrollment"
   },
-  "footer" : {
+  "footer": {
     "HEAD_MASTER": "დირექტორი",
     "ADMINISTRATION": "ადმინისტრატორი",
     "SCHOOL_OFFICE": "სკოლის ოფისი",

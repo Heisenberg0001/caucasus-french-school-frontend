@@ -58,3 +58,12 @@
   font-family: 'Noto Sans Georgian', sans-serif;
 }
 /* Text, font mixins */
+
+/* Display three dots (...) at the end of n-th line */
+@mixin nth-line-dots($lineNumber: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lineNumber;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

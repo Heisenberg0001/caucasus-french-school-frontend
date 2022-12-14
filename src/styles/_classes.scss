@@ -29,6 +29,15 @@
   text-overflow: ellipsis;
 }
 
+.dots {
+  // show three dots at the end of second line
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* #endregion GENERAL */
 
 /* #region BUTTONS */
