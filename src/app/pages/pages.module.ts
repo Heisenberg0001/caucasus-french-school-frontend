@@ -11,9 +11,18 @@ import {
   StudentStoriesCarouselComponent,
   AdmissionAndContactComponent,
 } from './home';
-
+import { SchoolLevelsComponent } from './home/school-levels/school-levels.component';
+import { StatisticsAndMediaComponent } from './home/statistics-and-media/statistics-and-media.component';
 @NgModule({
-  declarations: [HomeComponent, VideoIntroductionComponent, NewsAndArticlesComponent, StudentStoriesCarouselComponent, AdmissionAndContactComponent],
+  declarations: [
+    HomeComponent,
+    VideoIntroductionComponent,
+    NewsAndArticlesComponent,
+    StudentStoriesCarouselComponent,
+    SchoolLevelsComponent,
+    AdmissionAndContactComponent,
+    StatisticsAndMediaComponent,
+  ],
   imports: [CommonModule, RouterModule, AppSharedModule, TranslateModule, CarouselModule],
   exports: [HomeComponent],
 })
