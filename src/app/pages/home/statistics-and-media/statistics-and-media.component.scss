@@ -1,0 +1,824 @@
+.statistics-and-media {
+  .statistics-and-media__container {
+    max-width: 1755px;
+    margin: 0 auto 0 auto;
+    padding: 0 50px 0 50px;
+
+    display: flex;
+
+    .statistics {
+      margin: 0 45px 0 0;
+
+      .statistics__list {
+        width: 334px;
+
+        border-width: 1.26186px 1.26186px 0 1.26186px;
+        border-style: solid;
+        border-color: #000000;
+
+        .statistics__item {
+          height: 332px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .statistics__figure {
+            margin: 0 0 30px 0;
+
+            color: #841ae3;
+
+            font-family: 'Berkshire Swash Regular', sans-serif;
+            font-size: 91px;
+            line-height: 62px;
+            letter-spacing: -0.408623px;
+          }
+
+          .statistics__text {
+            font-size: 45px;
+            line-height: 52px;
+            letter-spacing: 1.5px;
+          }
+        }
+        .students {
+          .students__figure {
+          }
+          .students__text {
+          }
+        }
+        .activities {
+          position: relative;
+
+          .activities__box {
+            width: 1020px;
+            height: 100%;
+
+            left: -163px;
+
+            z-index: 0;
+            position: absolute;
+
+            background: #001b3d;
+          }
+          .activities__figure {
+            color: #fafcfd;
+            z-index: 20;
+          }
+          .activities__text {
+            color: #fafcfd;
+            z-index: 20;
+          }
+        }
+        .countries {
+          .countries__figure {
+          }
+          .countries__text {
+          }
+        }
+        .languages {
+          .languages__figure {
+          }
+          .languages__text {
+          }
+        }
+      }
+    }
+    .media {
+      width: 100%;
+
+      margin: 79px 0 0 0;
+
+      .statistics__header {
+        margin: 0 0 65px 0;
+
+        .statistics__header__text {
+          font-size: 57px;
+          line-height: 64px;
+          letter-spacing: 1.5px;
+
+          .media__span__text {
+            display: inline-block;
+
+            margin: 15px 0 0 0;
+
+            font-size: 136px;
+            line-height: 104px;
+            letter-spacing: 0.005em;
+            color: #841ae3;
+          }
+        }
+      }
+
+      .media__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .media__item {
+          &:not(:last-child) {
+            margin: 0 0 132px 0;
+          }
+          a {
+            cursor: pointer;
+            transition: all 300ms 200ms ease;
+
+            &:hover {
+              color: darkred;
+              font-size: 120px;
+            }
+          }
+          .media__text {
+            font-size: 116px;
+            line-height: 88px;
+            letter-spacing: 0.42px;
+          }
+        }
+        .youtube {
+          .youtube__text {
+          }
+        }
+        .radio {
+          .radio__text {
+          }
+        }
+        .el-books {
+          .el-books__text {
+          }
+        }
+        .media-library {
+          .media-library__text {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      .statistics {
+        .statistics__list {
+          .statistics__item {
+            height: 280px;
+
+            .statistics__figure {
+              font-size: 71px;
+            }
+            .statistics__text {
+              font-size: 35px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 850px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        margin: 40px 0 0 0;
+
+        .statistics__header {
+          margin: 0 0 80px 0;
+
+          .statistics__header__text {
+            font-size: 36px;
+
+            .media__span__text {
+              margin: 5px 0 0 0;
+
+              font-size: 88px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+                font-size: 94px;
+              }
+            }
+            .media__text {
+              font-size: 90px;
+              line-height: 13px;
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1356px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      .statistics {
+        .statistics__list {
+          width: 265px;
+
+          .statistics__item {
+            height: 230px;
+
+            .statistics__figure {
+              font-size: 60px;
+              line-height: 45px;
+            }
+            .statistics__text {
+              font-size: 26px;
+              line-height: 26px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 758px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        margin: 30px 0 0 0;
+
+        .statistics__header {
+          margin: 0 0 58px 0;
+
+          .statistics__header__text {
+            .media__span__text {
+              margin: 0 0 0 0;
+              font-size: 80px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+              }
+            }
+            .media__text {
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      .statistics {
+        .statistics__list {
+          width: 190px;
+
+          .statistics__item {
+            height: 195px;
+
+            .statistics__figure {
+              font-size: 57px;
+              line-height: 40px;
+            }
+            .statistics__text {
+              font-size: 25px;
+              line-height: 26px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 662px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        margin: 20px 0 0 0;
+
+        .statistics__header {
+          margin: 0 0 25px 0;
+
+          .statistics__header__text {
+            font-size: 35px;
+
+            .media__span__text {
+              font-size: 75px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+                font-size: 66px;
+              }
+            }
+            .media__text {
+              font-size: 62px;
+              line-height: 4px;
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      .statistics {
+        margin: 0 26px 0 0;
+
+        .statistics__list {
+          width: 175px;
+
+          .statistics__item {
+            height: 195px;
+
+            .statistics__figure {
+              font-size: 52px;
+              line-height: 40px;
+            }
+            .statistics__text {
+              font-size: 23px;
+              line-height: 26px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 593px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        .statistics__header {
+          margin: 0 0 15px 0;
+
+          .statistics__header__text {
+            font-size: 33px;
+
+            .media__span__text {
+              font-size: 65px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+                font-size: 46px;
+              }
+            }
+            .media__text {
+              font-size: 42px;
+              line-height: 4px;
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      padding: 0 20px 0 20px;
+
+      .statistics {
+        margin: 0 26px 0 0;
+
+        .statistics__list {
+          width: 175px;
+
+          .statistics__item {
+            height: 195px;
+
+            .statistics__figure {
+              font-size: 52px;
+            }
+            .statistics__text {
+              font-size: 23px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 525px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        .statistics__header {
+          .statistics__header__text {
+            font-size: 23px;
+
+            .media__span__text {
+              font-size: 45px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+                font-size: 36px;
+              }
+            }
+            .media__text {
+              font-size: 35px;
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      padding: 0 20px 0 20px;
+
+      .statistics {
+        margin: 0 26px 0 0;
+
+        .statistics__list {
+          width: 140px;
+
+          .statistics__item {
+            height: 155px;
+
+            .statistics__figure {
+              font-size: 42px;
+            }
+            .statistics__text {
+              font-size: 18px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 471px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        margin: 0 0 0 0;
+
+        .statistics__header {
+          margin: 0 0 5px 0;
+
+          .statistics__header__text {
+            font-size: 20px;
+
+            .media__span__text {
+              font-size: 40px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+                font-size: 32px;
+              }
+            }
+            &:not(:last-child) {
+              margin: 0 0 98px 0;
+            }
+            .media__text {
+              font-size: 29px;
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 510px) {
+  .statistics-and-media {
+    .statistics-and-media__container {
+      padding: 0 20px 0 20px;
+
+      .statistics {
+        margin: 0 26px 0 0;
+
+        .statistics__list {
+          width: 130px;
+
+          .statistics__item {
+            height: 155px;
+
+            .statistics__figure {
+              font-size: 30px;
+            }
+            .statistics__text {
+              font-size: 17px;
+            }
+          }
+          .students {
+            .students__figure {
+            }
+            .students__text {
+            }
+          }
+          .activities {
+            .activities__box {
+              width: 355px;
+            }
+            .activities__figure {
+            }
+            .activities__text {
+            }
+          }
+          .countries {
+            .countries__figure {
+            }
+            .countries__text {
+            }
+          }
+          .languages {
+            .languages__figure {
+            }
+            .languages__text {
+            }
+          }
+        }
+      }
+      .media {
+        margin: 0 0 0 0;
+
+        .statistics__header {
+          margin: 0 0 44px 0;
+
+          .statistics__header__text {
+            font-size: 18px;
+
+            .media__span__text {
+              font-size: 34px;
+            }
+          }
+        }
+        .media__list {
+          .media__item {
+            a {
+              &:hover {
+                font-size: 25px;
+              }
+            }
+            &:not(:last-child) {
+              margin: 0 0 98px 0;
+            }
+            .media__text {
+              font-size: 22px;
+            }
+          }
+          .youtube {
+            .youtube__text {
+            }
+          }
+          .radio {
+            .radio__text {
+            }
+          }
+          .el-books {
+            .el-books__text {
+            }
+          }
+          .media-library {
+            .media-library__text {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,6 +22,10 @@
   font-family: 'AR Archy';
   src: local('AR Archy'), url('../assets/fonts/ar-archy-semibold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Berkshire Swash Regular';
+  src: local('Berkshire Swash Regular'), url('../assets/fonts/BerkshireSwash-Regular.ttf') format('truetype');
+}
 
 .font-noto-sans-georgian {
   font-family: 'Noto Sans Georgian', sans-serif;

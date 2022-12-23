@@ -1,0 +1,290 @@
+.school-levels {
+  .school-levels__container {
+    width: 100%;
+
+    .school-levels__list {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+      .school-levels__item {
+      }
+      .list {
+        width: 50%;
+
+        .list__list {
+          width: 100%;
+
+          display: flex;
+          flex-direction: row;
+
+          .list__item {
+            width: 50%;
+            height: 983px;
+
+            position: relative;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+            .list__text {
+              position: absolute;
+
+              bottom: 85px;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+
+              font-weight: 400;
+              font-size: 45px;
+              line-height: 52px;
+              color: #ffffff;
+
+              text-align: center;
+            }
+            .list__image {
+              img {
+              }
+            }
+          }
+        }
+        .list__item_preschool {
+          background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/preschool.png');
+
+          &:hover {
+            background-image: linear-gradient(to top, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/preschool.png');
+          }
+        }
+        .list__item_primary {
+          background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/primary.png');
+
+          &:hover {
+            background-image: linear-gradient(to top, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/primary.png');
+          }
+        }
+        .list__item_middle {
+          background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/middle.png');
+
+          &:hover {
+            background-image: linear-gradient(to top, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/middle.png');
+          }
+        }
+        .list__item_high {
+          background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/high.png');
+
+          &:hover {
+            background-image: linear-gradient(to top, rgba(251, 251, 251, 0), rgba(0, 0, 0, 0.93)), url('../../../../assets/images/high.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+/************************** RESPONSIVE **************************/
+
+@media only screen and (max-width: 1645px) {
+  .school-levels {
+    .school-levels__container {
+      .school-levels__list {
+        .school-levels__item {
+        }
+        .list {
+          .list__list {
+            .list__item {
+              height: 737px;
+
+              .list__text {
+                font-size: 36px;
+              }
+            }
+            .list__item_preschool {
+            }
+            .list__item_primary {
+            }
+            .list__item_middle {
+            }
+            .list__item_high {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .school-levels {
+    .school-levels__container {
+      .school-levels__list {
+        .school-levels__item {
+        }
+        .list {
+          .list__list {
+            .list__item {
+              height: 690px;
+
+              .list__text {
+                font-size: 32px;
+              }
+            }
+            .list__item_preschool {
+            }
+            .list__item_primary {
+            }
+            .list__item_middle {
+            }
+            .list__item_high {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .school-levels {
+    .school-levels__container {
+      .school-levels__list {
+        flex-direction: column;
+
+        .school-levels__item {
+          width: 100%;
+        }
+        .list {
+          &:not(:last-child) {
+            margin: 0 0 30px 0;
+          }
+          .list__list {
+            .list__item {
+              height: 620px;
+
+              &:not(:last-child) {
+                margin: 0 30px 0 0;
+              }
+              .list__text {
+                font-size: 32px;
+              }
+            }
+            .list__item_preschool {
+            }
+            .list__item_primary {
+            }
+            .list__item_middle {
+            }
+            .list__item_high {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .school-levels {
+    .school-levels__container {
+      .school-levels__list {
+        .school-levels__item {
+        }
+        .list {
+          &:not(:last-child) {
+            margin: 0 0 20px 0;
+          }
+          .list__list {
+            .list__item {
+              height: 580px;
+
+              &:not(:last-child) {
+                margin: 0 20px 0 0;
+              }
+              .list__text {
+                bottom: 60px;
+
+                font-size: 29px;
+              }
+            }
+            .list__item_preschool {
+            }
+            .list__item_primary {
+            }
+            .list__item_middle {
+            }
+            .list__item_high {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .school-levels {
+    .school-levels__container {
+      .school-levels__list {
+        .school-levels__item {
+        }
+        .list {
+          &:not(:last-child) {
+            margin: 0 16px 0 0;
+          }
+          .list__list {
+            .list__item {
+              height: 380px;
+
+              &:not(:last-child) {
+                margin: 0 16px 0 0;
+              }
+              .list__text {
+                bottom: 21px;
+
+                font-size: 22px;
+              }
+            }
+            .list__item_preschool {
+            }
+            .list__item_primary {
+            }
+            .list__item_middle {
+            }
+            .list__item_high {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 415px) {
+  .school-levels {
+    .school-levels__container {
+      .school-levels__list {
+        .school-levels__item {
+        }
+        .list {
+          .list__list {
+            .list__item {
+              height: 390px;
+
+              .list__text {
+                font-size: 19px;
+
+                bottom: 7px;
+              }
+            }
+            .list__item_preschool {
+            }
+            .list__item_primary {
+            }
+            .list__item_middle {
+            }
+            .list__item_high {
+            }
+          }
+        }
+      }
+    }
+  }
+}
