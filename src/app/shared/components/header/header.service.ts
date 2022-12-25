@@ -32,7 +32,7 @@ const MENU_ITEMS: MenuItem[] = [
     children: [
       {
         label: 'menu.ABOUT_US',
-        link: '',
+        link: '/about-us',
       },
       {
         label: 'menu.FACILITIES',

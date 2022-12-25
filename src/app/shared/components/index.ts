@@ -3,4 +3,4 @@ export * from './header';
 export * from './footer';
 export * from './news-item';
 export * from './upcoming-event';
-
+export * from './section';
