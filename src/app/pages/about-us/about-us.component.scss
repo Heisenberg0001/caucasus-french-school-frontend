@@ -1,0 +1,9 @@
+@import 'src/styles';
+
+.section-sub-title {
+  @include textStyle_Georgian(#7d23e5, 22px, 400, $line-height: 28px, $text-transform: capitalize);
+}
+
+.margin-bottom {
+  margin-bottom: 100px;
+}

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content-wrapper',
   templateUrl: './content-wrapper.component.html',
-  styleUrls: ['./content-wrapper.component.scss']
+  styleUrls: ['./content-wrapper.component.scss'],
 })
-export class ContentWrapperComponent implements OnInit {
+export class ContentWrapperComponent {
+  @Input() bgImgUrl: string = '';
+  @Input() subSections: SubSection[] = [];
+  @Input() includeSummary: boolean = false;
+}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export interface SubSection {
+  title: string;
+  id: string;
 }

@@ -36,7 +36,7 @@
             <img src="assets/icons/plus.svg" alt="plus" />
           </div>
           <ng-container *ngIf="parentItem.isOpen">
-            <a *ngFor="let childItem of parentItem.children" [href]="childItem.link" (click)="toggleMenu()">{{ childItem.label | translate }} </a>
+            <a *ngFor="let childItem of parentItem.children" [routerLink]="childItem.link" (click)="toggleMenu()">{{ childItem.label | translate }} </a>
           </ng-container>
         </div>
       </nav>

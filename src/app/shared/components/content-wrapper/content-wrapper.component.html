@@ -1,1 +1,29 @@
-<p>content-wrapper works!</p>
+<div class="outer-container">
+  <div class="header-container disable-select" [style]="{ 'background-image': 'url(' + bgImgUrl + ')' }">
+    <div class="title-wrapper" [ngClass]="{ 'title-wrapper-alone': !includeSummary }">
+      <h2><ng-content select="[title]"></ng-content></h2>
+    </div>
+    <div class="summary-wrapper" *ngIf="includeSummary">
+      <div><ng-content select="[summary]"></ng-content></div>
+    </div>
+  </div>
+
+  <div class="body-container">
+    <div class="sidebar disable-select">
+      <ul *ngIf="subSections?.length">
+        <li *ngFor="let subSection of subSections" [scrollAnchor]="subSection.id">{{ subSection?.title }}</li>
+      </ul>
+    </div>
+    <div class="content-outer-container">
+      <div class="content-inner-container">
+        <ng-content select="[content]"></ng-content>
+      </div>
+      <div class="footer-container">
+        <div class="footer-aside"></div>
+        <div class="footer-content">
+          <app-footer></app-footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
