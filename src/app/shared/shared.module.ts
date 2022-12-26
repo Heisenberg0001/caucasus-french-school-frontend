@@ -17,7 +17,6 @@ import {
     ScrollSectionDirective
 } from '@shared/utils';
 import { RouterLinkWithHref } from '@angular/router';
-import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { TestComponent } from './components/test/test.component';
     UpcomingEventComponent,
     ScrollAnchorDirective,
     ScrollSectionDirective,
-    TestComponent,
     SectionComponent,
   ],
   imports: [CommonModule, FormsModule, TranslateModule, RouterLinkWithHref],
@@ -40,7 +38,6 @@ import { TestComponent } from './components/test/test.component';
     ClickOutsideDirective,
     NewsItemComponent,
     UpcomingEventComponent,
-    TestComponent,
     ScrollSectionDirective,
     SectionComponent,
   ],
