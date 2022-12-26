@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterLinkWithHref } from '@angular/router';
 
 import {
   ContentWrapperComponent,
@@ -11,12 +12,7 @@ import {
   UpcomingEventComponent,
   SectionComponent,
 } from '@shared/components';
-import {
-    ClickOutsideDirective,
-    ScrollAnchorDirective,
-    ScrollSectionDirective
-} from '@shared/utils';
-import { RouterLinkWithHref } from '@angular/router';
+import { ClickOutsideDirective, ScrollAnchorDirective, ScrollSectionDirective } from '@shared/utils';
 
 @NgModule({
   declarations: [
