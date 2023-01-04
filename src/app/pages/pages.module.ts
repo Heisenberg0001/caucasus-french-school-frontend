@@ -8,22 +8,22 @@ import { TranslateModule } from '@ngx-translate/core';
 import {
   HomeComponent,
   VideoIntroductionComponent,
-  NewsAndArticlesComponent,
   StudentStoriesCarouselComponent,
   AdmissionAndContactComponent,
   SchoolLevelsComponent,
   StatisticsAndMediaComponent,
 } from './home';
+import { HomeNewsAndArticlesComponent } from './home';
 
 @NgModule({
   declarations: [
     HomeComponent,
     VideoIntroductionComponent,
-    NewsAndArticlesComponent,
     StudentStoriesCarouselComponent,
     SchoolLevelsComponent,
     AdmissionAndContactComponent,
     StatisticsAndMediaComponent,
+    HomeNewsAndArticlesComponent,
   ],
   imports: [CommonModule, RouterModule, AppSharedModule, TranslateModule, CarouselModule],
   exports: [HomeComponent],

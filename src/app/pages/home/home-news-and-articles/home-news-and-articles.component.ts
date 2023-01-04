@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '@core/services';
 
 @Component({
-  selector: 'app-news-and-articles',
-  templateUrl: './news-and-articles.component.html',
-  styleUrls: ['./news-and-articles.component.scss'],
+  selector: 'app-home-news-and-articles',
+  templateUrl: './home-news-and-articles.component.html',
+  styleUrls: ['./home-news-and-articles.component.scss'],
 })
-export class NewsAndArticlesComponent implements OnInit {
+export class HomeNewsAndArticlesComponent implements OnInit {
   news: News[] = [];
   upcomingEvents: UpcomingEvent[] = [];
 
