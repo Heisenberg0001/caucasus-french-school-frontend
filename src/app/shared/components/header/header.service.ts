@@ -36,23 +36,23 @@ const MENU_ITEMS: MenuItem[] = [
       },
       {
         label: 'menu.FACILITIES',
-        link: '',
+        link: '/facilities',
       },
       {
         label: 'menu.ADMINISTRATION',
-        link: '',
+        link: '/administration',
       },
       {
         label: 'menu.JOIN_OUR_TEAM',
-        link: '',
+        link: '/join-our-team',
       },
       {
         label: 'menu.PARTNERS_SPONSORS',
-        link: '',
+        link: '/partners-and-sponsors',
       },
       {
         label: 'menu.CONTACT_US',
-        link: '',
+        link: '/contact',
       },
     ],
   },
@@ -62,27 +62,27 @@ const MENU_ITEMS: MenuItem[] = [
     children: [
       {
         label: 'menu.PRESCHOOL',
-        link: '',
+        link: '/preschool',
       },
       {
         label: 'menu.PRIMARY',
-        link: '',
+        link: '/primary',
       },
       {
         label: 'menu.MIDDLE_SCHOOL',
-        link: '',
+        link: '/middle-school',
       },
       {
         label: 'menu.HIGH_SCHOOL',
-        link: '',
+        link: '/high-school',
       },
       {
         label: 'menu.EXTRACURRICULAR_ACTIVITIES',
-        link: '',
+        link: '/extracurricular-activities',
       },
       {
         label: 'menu.SCHOOL_AND_UNIVERSITY_GUIDANCE',
-        link: '',
+        link: '/school-and-university-guidance',
       },
     ],
   },
@@ -92,23 +92,23 @@ const MENU_ITEMS: MenuItem[] = [
     children: [
       {
         label: 'menu.PRACTICAL_INFO',
-        link: '',
+        link: '/practical-information',
       },
       {
         label: 'menu.SCHOOL_CALENDAR',
-        link: '',
+        link: '/calendar',
       },
       {
         label: 'menu.NEWS_AND_ARTICLES',
-        link: '',
+        link: '/news',
       },
       {
         label: 'menu.LIBRARY',
-        link: '',
+        link: '/library',
       },
       {
         label: 'menu.CAFETERIA',
-        link: '',
+        link: '/cafeteria',
       },
     ],
   },
@@ -118,11 +118,11 @@ const MENU_ITEMS: MenuItem[] = [
     children: [
       {
         label: 'menu.PARENTS_ASSOCIATION',
-        link: '',
+        link: '/parents-association',
       },
       {
         label: 'menu.EFC_ALUMNI',
-        link: '',
+        link: '/alumni',
       },
     ],
   },
@@ -132,11 +132,11 @@ const MENU_ITEMS: MenuItem[] = [
     children: [
       {
         label: 'menu.WHY_CHOOSE_THE_FRENCH_SCHOOL',
-        link: '',
+        link: '/why-efc',
       },
       {
         label: 'menu.ENROLLMENT',
-        link: '',
+        link: '/enrollment',
       },
     ],
   },
